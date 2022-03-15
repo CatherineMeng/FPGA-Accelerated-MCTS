@@ -55,18 +55,18 @@ struct memoized{
 
 
 struct SelTupleOut{
-    // best UCT leaf index (leafind=parentind*fo+childind, 
-        // where parentind is the leaf node itself, 
-        // and childind corresponds to which action edge to be taken at this leaf)?
-    // subtree index,
-    // leaf depth index,
-    // expansion actions (Selection output)
+    // selected UCT leaf index, expansion actions (Selection output)
+        // where leafind is the leaf node itself,  (memoized.par_ind of that worker at retuned depth)
+        // and aind corresponds to which action edge to be taken at this leaf (memoized.child_ind of that worker at retuned depth)
+    // out_sti: subtree index,
+    // out_di: leaf depth index,
     int leafind;
+    int aind;
     int out_sti,
     int out_di;
-    int outa;
+    
     // worker id
-    int wid;
+    // int wid;
 };
 
 // template<int fo>

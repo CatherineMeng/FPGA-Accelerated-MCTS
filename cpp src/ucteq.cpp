@@ -59,13 +59,13 @@ extern "C" {
 		// number of xbar output pipes should be equal to fo (A).
 
 	 	hls::stream<BpSel_inputObj> IDRpipe1("IDRpipe1");
-		#pragma HLS STREAM variable=IDRpipe1 depth=1
+		#pragma HLS STREAM variable=IDRpipe1 depth=pw
 	 	#pragma HLS bind_storage variable=IDRpipe1 type=fifo impl=SRL
 		hls::stream<BpSel_inputObj> IDRpipe2("IDRpipe2");
-		#pragma HLS STREAM variable=IDRpipe2 depth=1
+		#pragma HLS STREAM variable=IDRpipe2 depth=pw
 	 	#pragma HLS bind_storage variable=IDRpipe2 type=fifo impl=SRL
 		hls::stream<BpSel_inputObj> IDRpipe3("IDRpipe3");
-		#pragma HLS STREAM variable=IDRpipe3 depth=1
+		#pragma HLS STREAM variable=IDRpipe3 depth=pw
 	 	#pragma HLS bind_storage variable=IDRpipe3 type=fifo impl=SRL
 
 		/*
@@ -89,6 +89,16 @@ extern "C" {
 		#pragma HLS STREAM variable=rewardpipe3 depth=1
 	 	#pragma HLS bind_storage variable=rewardpipe3 type=fifo impl=SRL
 	 	*/
+	 	hls::stream<SelTupleOut> OutTuppipe1("OutTuppipe1");
+		#pragma HLS STREAM variable=OutTuppipe1 depth=pw
+	 	#pragma HLS bind_storage variable=OutTuppipe1 type=fifo impl=SRL
+		hls::stream<SelTupleOut> OutTuppipe2("OutTuppipe2");
+		#pragma HLS STREAM variable=OutTuppipe2 depth=pw
+	 	#pragma HLS bind_storage variable=OutTuppipe2 type=fifo impl=SRL
+		hls::stream<SelTupleOut> OutTuppipe3("OutTuppipe3");
+		#pragma HLS STREAM variable=OutTuppipe3 depth=pw
+	 	#pragma HLS bind_storage variable=OutTuppipe3 type=fifo impl=SRL
+
 
 		static node root;
 		static ap_int<2> memoi_lev1BkUp[pw]; //datawidth=log2(fo)
@@ -101,6 +111,7 @@ extern "C" {
 
 		while (!X.empty()){
 			// put dataflow here
+			#pragma HLS DATAFLOW
 			// ======back-up at root======
 			dtype V=X.read();
 			int id=ids.read();
@@ -132,9 +143,10 @@ extern "C" {
 		    xbar(xbarpipe,
 		    	xbarIDRpipe,IDRpipe1,IDRpipe2,IDRpipe3);
 
-		    subT1_pipl();
-		    subT2_pipl();
-		    subT3_pipl();
+		    subT1_pipl(IDRpipe1,OutTuppipe1,flushs);
+		    // subT2_pipl();
+		    // subT3_pipl();
+		    collect_out(OutTuppipe1,OutTuppipe2,OutTuppipe3,out);
 
 
 		}
@@ -175,6 +187,41 @@ void xbar(
 		hls::stream<BpSel_inputObj> &outIDRpipe3
 		)
 {
+	while (1){
+		
+	}
+	ap_int<fo> ind = inpipe.read();
+	// dtype V=rewardpipe.read();
+	// int worker_id=inIDpipe.read();
+	BpSel_inputObj IDRobject=inIDRpipe.read();
+	if(ind==1){
+		// outIDpipe1.write(worker_id);
+		// rewardpipe1.write(V);
+		outIDRpipe1.write(IDRobject);
+	}	
+	if(ind==2){
+		// outIDpipe2.write(worker_id);
+		// rewardpipe2.write(V);
+		outIDRpipe2.write(IDRobject);
+	}	
+	if(ind==3){
+		// outIDpipe3.write(worker_id);
+		// rewardpipe3.write(V);
+		outIDRpipe3.write(IDRobject);
+	}	
+}
+
+void collect_out(
+		hls::stream<SelTupleOut> &inpipe1,
+		hls::stream<SelTupleOut> &inpipe2, 
+		hls::stream<SelTupleOut> &inpipe3,
+		hls::stream<pkt128> &out
+		)
+{
+
+while(!inpipe1.empty()){
+
+}
 	ap_int<fo> ind = inpipe.read();
 	// dtype V=rewardpipe.read();
 	// int worker_id=inIDpipe.read();
@@ -200,7 +247,8 @@ void subT1_pipl(
 		// hls::stream<dtype> &Reward_inpipe, //a reward for BackUp comes
 		// hls::stream<int> &IDpipe, //a worker ID for memoization of selected indices
 		hls::stream<BpSel_inputObj> &inIDRpipe,
-		hls::stream<pkt128> &out,
+		hls::stream<SelTupleOut> &outpipe,
+		// hls::stream<pkt128> &out, //=======================TODO: add flush logic=======================
 		int flushs)
 {
 	
@@ -228,14 +276,17 @@ void subT1_pipl(
 
  	// Memory bank declarations
 	static node lev1[1];
-	static memoized memoizlev1[pw]; //which child of lev1 node did we select
+	// static memoized memoizlev1[pw]; //which child of lev1 node did we select
 	static node lev2[fo];
-	static memoized memoizlev2[pw]; //which child of lev2 node did we select
+	// static memoized memoizlev2[pw]; //which child of lev2 node did we select
 	static node lev3[pow(fo,2)];
-	static memoized memoizlev3[pw];
+	// static memoized memoizlev3[pw];
 	static node lev4[pow(fo,3)];
-	static memoized memoizlev4[pw];
+	// static memoized memoizlev4[pw];
 	static node lev5[pow(fo,4)]; 
+
+	static memoized memoizlevs[D][pw];
+	#pragma HLS ARRAY_PARTITION variable=memoizlevs dim=1 complete
 	
 	//during traversing any above memory bank, 
 	//if a leaf is reached, toggle the contrtol signal lev_return so that 
@@ -244,8 +295,11 @@ void subT1_pipl(
  	pipecomm init_obj;
  	init_obj.depth=1;
  	init_obj.ind=0; //Selection par index always start at index 0 at lev1 (bc it is the only avail)
+ 	SelTupleOut outobj;
+
 	while(!inIDRpipe.empty()){
 		// put dataflow here
+		#pragma HLS DATAFLOW
 		// dtype V=inIDRpipe.read();
 		// id=IDpipe.read();
 
@@ -270,21 +324,27 @@ void subT1_pipl(
 		lev4[memoizlev4[id]]+=v;
 		lev5[memoizlev5[id]]+=v;*/
 		subT1_lev_stage(childindexpipe[0], childindexpipe[1],lev_retpipe[0],lev_retpipe[1],
-			IDRpipes[0],IDRpipes[1],lev1, memoizlev1);
+			IDRpipes[0],IDRpipes[1],lev1, memoizlevs[0]);
 		subT1_lev_stage(childindexpipe[1], childindexpipe[2],lev_retpipe[1],lev_retpipe[2],
-			IDRpipes[1],IDRpipes[2],lev2, memoizlev2);
+			IDRpipes[1],IDRpipes[2],lev2, memoizlevs[1]);
 		subT1_lev_stage(childindexpipe[2], childindexpipe[3],lev_retpipe[2],lev_retpipe[3],
-			IDRpipes[2],IDRpipes[3],lev3, memoizlev3);
+			IDRpipes[2],IDRpipes[3],lev3, memoizlevs[2]);
 		subT1_lev_stage(childindexpipe[3], childindexpipe[4],lev_retpipe[3],lev_retpipe[4],
-			IDRpipes[3],IDRpipes[4],lev4, memoizlev4);
+			IDRpipes[3],IDRpipes[4],lev4, memoizlevs[3]);
 		subT1_lev_stage(childindexpipe[4], childindexpipe[5],lev_retpipe[4],lev_retpipe[5],
-			IDRpipes[4],IDRpipes[5],lev5, memoizlev5);
+			IDRpipes[4],IDRpipes[5],lev5, memoizlevs[4]);
 		// ========Done: if selection returns at the last level, do expansion logic? not increasing numc=============
 		// ========Done: if nothing to expand at max depth, simply return this index and let cpu re-run simu? Yes, extremely rare becasue sparse reward - subtree usually grows balanced=============
-		// TODO: identify action_to_return without inserting another pipe
+		// DONE: identify action_to_return without inserting another pipe
 		lev_retpipe[0].write(lev_return)
-		pipecomm resultIndDepth=childindexpipe[0].write(init_obj);
-IDRpipes[0].write(IDRobject)
+		pipecomm resultIndDepth=childindexpipe[5].read();
+		int ret_depth = resultIndDepth.depth;
+		outobj.out_sti=1;
+		outobj.out_di=ret_depth;
+		memoized leaf_act = memoizlevs[ret_depth][IDRobject.wind];
+		outobj.leafind = leaf_act.par_ind;
+		outobj.aind = leaf_act.child_ind;
+		outpipe.write(outobj);
 	}
 	
 }
@@ -301,7 +361,7 @@ void subT1_lev_stage(
 		memoized memoiz_array[pw], //input, memoization of workers at this level
 		)       
 {
-	init_obj pipeobj=inpipe.read();
+	pipecomm pipeobj=inpipe.read();
 	int parindex=pipeobj.ind;
 	int newind; //this will replace pipeobj.ind to pass to next stage
 	node parnode=node_array[parindex];//for selection
