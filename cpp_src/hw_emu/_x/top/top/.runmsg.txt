@@ -1,0 +1,2 @@
+performing high-level synthesis for kernel: top
+Log file: /home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/hw_emu/_x/top/top/vitis_hls.log

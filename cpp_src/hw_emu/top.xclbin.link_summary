@@ -1,0 +1,207 @@
+<ENTRY>
+{
+ "thisFile": "/home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/hw_emu/top.xclbin.link_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Sun Jan 24 08:15:54 2021",
+ "timestampMillis": "1611504954389",
+ "buildStep": {
+  "cmdId": "9aa943f4-844c-44ce-b736-3d08e12c777b",
+  "name": "v++",
+  "logFile": "/home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/hw_emu/_x/link/link.steps.log",
+  "commandLine": "/media/myuan/working/Vitis/2021.2/bin/unwrapped/lnx64.o/v++  --vivado.prop \"run.__KERNEL__.{STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS}={-directive sdx_optimization_effort_high}\" --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_route_design_summary steps {route_design} runs {impl_1} options {-max_paths 10}\" --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_post_route_phys_opt_design_summary steps {post_route_phys_opt_design} runs {impl_1} options {-max_paths 10}\" -l -t hw_emu --config ../u200.cfg ./top.xo -o top.xclbin ",
+  "args": [
+   "-l",
+   "-t",
+   "hw_emu",
+   "--config",
+   "../u200.cfg",
+   "./top.xo",
+   "-o",
+   "top.xclbin"
+  ],
+  "iniFiles": [
+   {
+    "path": "/home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/u200.cfg",
+    "content": "platform=xilinx_u200_gen3x16_xdma_1_202110_1\r\ndebug=1\r\nsave-temps=1\r\n\r\n[connectivity]\r\nnk=top:1:top_1\r\n#sp=top_1.X:PLRAM[1]\r\nsp=top_1.out:DDR[0]\r\nsp=top_1.adj_list:DDR[0]\r\n#sp=top_1.flushs:PLRAM[1]\r\n\r\n#slr=top_1:SLR0\r\n\r\n[profile]\r\ndata=all:all:all\r\n"
+   }
+  ],
+  "cwd": "/home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/hw_emu"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sun Jan 24 08:15:54 2021",
+ "timestampMillis": "1611504954389",
+ "status": {
+  "cmdId": "9aa943f4-844c-44ce-b736-3d08e12c777b",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Sun Jan 24 08:16:03 2021",
+ "timestampMillis": "1611504963945",
+ "buildSummary": {
+  "hardwarePlatform": "xilinx_u200_gen3x16_xdma_1_202110_1.xpfm",
+  "hardwareDsa": "hw.xsa",
+  "platformDirectory": "/opt/xilinx/platforms/xilinx_u200_gen3x16_xdma_1_202110_1",
+  "runtime": "OpenCL",
+  "systemConfig": "Linux",
+  "flow": "BF_LINK",
+  "target": "TT_HW_EMU",
+  "binaryContainer": {
+   "base": {
+    "type": "BT_UKNOWN",
+    "name": "top",
+    "file": "/home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/hw_emu/top.xclbin",
+    "reports": [],
+    "uuid": ""
+   },
+   "kernels": []
+  },
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "top",
+     "file": "/home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/hw_emu/top.xo",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/hw_emu/_x/link/int/xo/top/top/cpu_sources/ucteq.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [
+     "top_1"
+    ],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "Vitis V++ Compiler Release 2021.2. SW Build 3363252 on 2021-10-14-04:41:01"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Sun Jan 24 08:16:04 2021",
+ "timestampMillis": "1611504964113",
+ "buildStep": {
+  "cmdId": "3d801f9c-f056-4dcd-b8b1-9b0dd4a6b0fa",
+  "name": "system_link",
+  "logFile": "",
+  "commandLine": "system_link --xo /home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/hw_emu/top.xo -keep --config /home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/hw_emu/_x/link/int/syslinkConfig.ini --xpfm /opt/xilinx/platforms/xilinx_u200_gen3x16_xdma_1_202110_1/xilinx_u200_gen3x16_xdma_1_202110_1.xpfm --target emu --output_dir /home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/hw_emu/_x/link/int --temp_dir /home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/hw_emu/_x/link/sys_link",
+  "args": [
+   "--xo",
+   "/home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/hw_emu/top.xo",
+   "-keep",
+   "--config",
+   "/home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/hw_emu/_x/link/int/syslinkConfig.ini",
+   "--xpfm",
+   "/opt/xilinx/platforms/xilinx_u200_gen3x16_xdma_1_202110_1/xilinx_u200_gen3x16_xdma_1_202110_1.xpfm",
+   "--target",
+   "emu",
+   "--output_dir",
+   "/home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/hw_emu/_x/link/int",
+   "--temp_dir",
+   "/home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/hw_emu/_x/link/sys_link"
+  ],
+  "iniFiles": [
+   {
+    "path": "/home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/hw_emu/_x/link/int/syslinkConfig.ini",
+    "content": "nk=top:1:top_1\nsp=top_1.out:DDR[0]\nsp=top_1.adj_list:DDR[0]\n\n"
+   }
+  ],
+  "cwd": "/home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/hw_emu"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sun Jan 24 08:16:04 2021",
+ "timestampMillis": "1611504964114",
+ "status": {
+  "cmdId": "3d801f9c-f056-4dcd-b8b1-9b0dd4a6b0fa",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sun Jan 24 08:16:15 2021",
+ "timestampMillis": "1611504975889",
+ "status": {
+  "cmdId": "3d801f9c-f056-4dcd-b8b1-9b0dd4a6b0fa",
+  "state": "CS_FAILED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sun Jan 24 08:16:16 2021",
+ "timestampMillis": "1611504976221",
+ "report": {
+  "path": "/home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/hw_emu/_x/reports/link/v++_link_top_guidance.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sun Jan 24 08:16:16 2021",
+ "timestampMillis": "1611504976222",
+ "report": {
+  "path": "/home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/hw_emu/_x/v++_link_top_guidance.pb",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sun Jan 24 08:16:16 2021",
+ "timestampMillis": "1611504976223",
+ "report": {
+  "path": "/home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/hw_emu/_x/logs/optraceViewer.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "OPERATION_TRACE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sun Jan 24 08:16:16 2021",
+ "timestampMillis": "1611504976224",
+ "status": {
+  "cmdId": "9aa943f4-844c-44ce-b736-3d08e12c777b",
+  "state": "CS_FAILED"
+ }
+}
+</ENTRY>

@@ -1,0 +1,20 @@
+INFO: [v++ 60-1306] Additional information associated with this v++ compile can be found at:
+	Reports: /home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/hw_emu/_x/reports/top
+	Log files: /home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/hw_emu/_x/logs/top
+INFO: [v++ 60-1548] Creating build summary session with primary output /home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/hw_emu/top.xo.compile_summary, at Sun Jan 24 08:15:55 2021
+INFO: [v++ 60-1316] Initiating connection to rulecheck server, at Sun Jan 24 08:15:55 2021
+INFO: [v++ 60-1315] Creating rulecheck session with output '/home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/hw_emu/_x/reports/top/v++_compile_top_guidance.html', at Sun Jan 24 08:15:57 2021
+INFO: [v++ 60-895]   Target platform: /opt/xilinx/platforms/xilinx_u200_gen3x16_xdma_1_202110_1/xilinx_u200_gen3x16_xdma_1_202110_1.xpfm
+INFO: [v++ 60-1578]   This platform contains Xilinx Shell Archive '/opt/xilinx/platforms/xilinx_u200_gen3x16_xdma_1_202110_1/hw/hw.xsa'
+INFO: [v++ 74-78] Compiler Version string: 2021.2
+INFO: [v++ 60-585] Compiling for hardware emulation target
+INFO: [v++ 60-423]   Target device: xilinx_u200_gen3x16_xdma_1_202110_1
+INFO: [v++ 60-242] Creating kernel: 'top'
+
+===>The following messages were generated while  performing high-level synthesis for kernel: top Log file: /home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/hw_emu/_x/top/top/vitis_hls.log :
+ERROR: [v++ 207-7] expected '}' (/home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/ucteq.cpp:444:2)
+ERROR: [v++ 60-300] Failed to build kernel(ip) top, see log for details: /home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/hw_emu/_x/top/top/vitis_hls.log
+ERROR: [v++ 60-773] In '/home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/hw_emu/_x/top/top/vitis_hls.log', caught Tcl error: ERROR: [HLS 207-7] expected '}' (/home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/ucteq.cpp:444:2)
+ERROR: [v++ 60-599] Kernel compilation failed to complete
+ERROR: [v++ 60-592] Failed to finish compilation
+INFO: [v++ 60-1653] Closing dispatch client.

@@ -1,0 +1,338 @@
+Sun Jan 24 08:15:45 2021: Running xcd server. This server was built by gradle.
+Sun Jan 24 08:15:45 2021: Server was asked to start on port: '39717'
+Sun Jan 24 08:15:45 2021: Server is using token UUID: '7fbddbf2-33df-4dd4-9255-50f08e06f274'
+Sun Jan 24 08:15:45 2021: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+Sun Jan 24 08:15:45 2021: Attempting to start server on port '39717'
+Sun Jan 24 08:15:45 2021: XCD main fifo: created main fifo '/tmp/xcdmain7fbddbf2-33df-4dd4-9255-50f08e06f274', fd read = 15
+Sun Jan 24 08:15:45 2021: Running Dispatch Server
+Sun Jan 24 08:15:45 2021: Version 2.2.0
+Sun Jan 24 08:15:54 2021: Dispatch Server: Accepted socket connection from client
+Sun Jan 24 08:15:54 2021: Starting Socket connection
+Sun Jan 24 08:15:54 2021: EXCHANGE_TOKEN received, server token: 7fbddbf2-33df-4dd4-9255-50f08e06f274, passed token: 7fbddbf2-33df-4dd4-9255-50f08e06f274
+Sun Jan 24 08:15:55 2021: DISPATCH_HANDLER: Adding handler from function makeHandler in library libxv_system_diagram
+Sun Jan 24 08:15:55 2021: SESSION_MGR: creating session with session uuid: '42778c52-8521-4976-a613-49c5611f5f19' and name 'v++_compile_top'
+Sun Jan 24 08:15:55 2021: KERNEL_SVC: creating session with uuid: '42778c52-8521-4976-a613-49c5611f5f19' and name 'v++_compile_top'
+Sun Jan 24 08:15:55 2021: GUIDANCE_SMGR: creating guidance session with uuid: '42778c52-8521-4976-a613-49c5611f5f19' and name 'v++_compile_top'
+Sun Jan 24 08:15:55 2021: SYSTEM_DIAGRAM: creating session with uuid: '42778c52-8521-4976-a613-49c5611f5f19' and name 'v++_compile_top'
+Sun Jan 24 08:16:07 2021: SESSION_MGR: closing session for UUID '42778c52-8521-4976-a613-49c5611f5f19' with name 'v++_compile_top'
+Sun Jan 24 08:16:07 2021: KERNEL_SVC: closing session for UUID '42778c52-8521-4976-a613-49c5611f5f19' with name 'v++_compile_top'
+Sun Jan 24 08:16:07 2021: GUIDANCE_SMGR: closing session for UUID '42778c52-8521-4976-a613-49c5611f5f19' with name 'v++_compile_top'
+Sun Jan 24 08:16:07 2021: SYSTEM_DIAGRAM: closing session for UUID '42778c52-8521-4976-a613-49c5611f5f19' with name 'v++_compile_top'
+Sun Jan 24 08:15:46 2021: Running xcd server. This server was built by gradle.
+Sun Jan 24 08:15:46 2021: Server was asked to start on port: '45395'
+Sun Jan 24 08:15:46 2021: Server is using token UUID: '79746629-b5b3-49a8-b3a4-1c65f2978590'
+Sun Jan 24 08:15:46 2021: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+Sun Jan 24 08:15:46 2021: Attempting to start server on port '45395'
+Sun Jan 24 08:15:46 2021: XCD main fifo: created main fifo '/tmp/xcdmain79746629-b5b3-49a8-b3a4-1c65f2978590', fd read = 15
+Sun Jan 24 08:15:46 2021: Running Dispatch Server
+Sun Jan 24 08:15:46 2021: Version 2.2.0
+Sun Jan 24 08:15:45 2021: Running xcd server. This server was built by gradle.
+Sun Jan 24 08:15:45 2021: Server was asked to start on port: '35873'
+Sun Jan 24 08:15:45 2021: Server is using token UUID: '0cce8d21-e4df-48ab-bd6e-6d5065d414b4'
+Sun Jan 24 08:15:45 2021: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+Sun Jan 24 08:15:45 2021: Attempting to start server on port '35873'
+Sun Jan 24 08:15:45 2021: XCD main fifo: created main fifo '/tmp/xcdmain0cce8d21-e4df-48ab-bd6e-6d5065d414b4', fd read = 15
+Sun Jan 24 08:15:45 2021: Running Dispatch Server
+Sun Jan 24 08:15:45 2021: Version 2.2.0
+Sun Jan 24 08:15:54 2021: Dispatch Server: Accepted socket connection from client
+Sun Jan 24 08:15:54 2021: Starting Socket connection
+Sun Jan 24 08:15:54 2021: EXCHANGE_TOKEN received, server token: 0cce8d21-e4df-48ab-bd6e-6d5065d414b4, passed token: 0cce8d21-e4df-48ab-bd6e-6d5065d414b4
+Sun Jan 24 08:15:55 2021: DISPATCH_HANDLER: Adding handler from function makeHandler in library libxv_system_diagram
+Sun Jan 24 08:15:55 2021: SESSION_MGR: creating session with session uuid: '16f4a839-ac99-461b-b8dd-2348770c266b' and name 'v++_compile_top'
+Sun Jan 24 08:15:55 2021: KERNEL_SVC: creating session with uuid: '16f4a839-ac99-461b-b8dd-2348770c266b' and name 'v++_compile_top'
+Sun Jan 24 08:15:55 2021: GUIDANCE_SMGR: creating guidance session with uuid: '16f4a839-ac99-461b-b8dd-2348770c266b' and name 'v++_compile_top'
+Sun Jan 24 08:15:55 2021: SYSTEM_DIAGRAM: creating session with uuid: '16f4a839-ac99-461b-b8dd-2348770c266b' and name 'v++_compile_top'
+Sun Jan 24 08:16:10 2021: SESSION_MGR: closing session for UUID '16f4a839-ac99-461b-b8dd-2348770c266b' with name 'v++_compile_top'
+Sun Jan 24 08:16:10 2021: KERNEL_SVC: closing session for UUID '16f4a839-ac99-461b-b8dd-2348770c266b' with name 'v++_compile_top'
+Sun Jan 24 08:16:10 2021: GUIDANCE_SMGR: closing session for UUID '16f4a839-ac99-461b-b8dd-2348770c266b' with name 'v++_compile_top'
+Sun Jan 24 08:16:10 2021: SYSTEM_DIAGRAM: closing session for UUID '16f4a839-ac99-461b-b8dd-2348770c266b' with name 'v++_compile_top'
+Sun Jan 24 08:15:45 2021: Running xcd server. This server was built by gradle.
+Sun Jan 24 08:15:45 2021: Server was asked to start on port: '36937'
+Sun Jan 24 08:15:45 2021: Server is using token UUID: '065c6363-e32c-4fe1-be10-cb69ffcdf91a'
+Sun Jan 24 08:15:45 2021: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+Sun Jan 24 08:15:45 2021: Attempting to start server on port '36937'
+Sun Jan 24 08:15:45 2021: XCD main fifo: created main fifo '/tmp/xcdmain065c6363-e32c-4fe1-be10-cb69ffcdf91a', fd read = 15
+Sun Jan 24 08:15:45 2021: Running Dispatch Server
+Sun Jan 24 08:15:45 2021: Version 2.2.0
+Sun Jan 24 08:15:54 2021: Dispatch Server: Accepted socket connection from client
+Sun Jan 24 08:15:54 2021: Starting Socket connection
+Sun Jan 24 08:15:54 2021: EXCHANGE_TOKEN received, server token: 065c6363-e32c-4fe1-be10-cb69ffcdf91a, passed token: 065c6363-e32c-4fe1-be10-cb69ffcdf91a
+Sun Jan 24 08:15:55 2021: DISPATCH_HANDLER: Adding handler from function makeHandler in library libxv_system_diagram
+Sun Jan 24 08:15:55 2021: SESSION_MGR: creating session with session uuid: '10b08257-8edc-4eed-9e62-0fae7abb5aeb' and name 'v++_compile_top'
+Sun Jan 24 08:15:55 2021: KERNEL_SVC: creating session with uuid: '10b08257-8edc-4eed-9e62-0fae7abb5aeb' and name 'v++_compile_top'
+Sun Jan 24 08:15:55 2021: GUIDANCE_SMGR: creating guidance session with uuid: '10b08257-8edc-4eed-9e62-0fae7abb5aeb' and name 'v++_compile_top'
+Sun Jan 24 08:15:55 2021: SYSTEM_DIAGRAM: creating session with uuid: '10b08257-8edc-4eed-9e62-0fae7abb5aeb' and name 'v++_compile_top'
+Sun Jan 24 08:16:10 2021: SESSION_MGR: closing session for UUID '10b08257-8edc-4eed-9e62-0fae7abb5aeb' with name 'v++_compile_top'
+Sun Jan 24 08:16:10 2021: KERNEL_SVC: closing session for UUID '10b08257-8edc-4eed-9e62-0fae7abb5aeb' with name 'v++_compile_top'
+Sun Jan 24 08:16:10 2021: GUIDANCE_SMGR: closing session for UUID '10b08257-8edc-4eed-9e62-0fae7abb5aeb' with name 'v++_compile_top'
+Sun Jan 24 08:16:10 2021: SYSTEM_DIAGRAM: closing session for UUID '10b08257-8edc-4eed-9e62-0fae7abb5aeb' with name 'v++_compile_top'
+Sun Jan 24 08:15:45 2021: Running xcd server. This server was built by gradle.
+Sun Jan 24 08:15:45 2021: Server was asked to start on port: '46321'
+Sun Jan 24 08:15:45 2021: Server is using token UUID: '1fdde0ff-e7d9-470d-937e-3c0d6fb4aadf'
+Sun Jan 24 08:15:45 2021: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+Sun Jan 24 08:15:45 2021: Attempting to start server on port '46321'
+Sun Jan 24 08:15:45 2021: XCD main fifo: created main fifo '/tmp/xcdmain1fdde0ff-e7d9-470d-937e-3c0d6fb4aadf', fd read = 15
+Sun Jan 24 08:15:45 2021: Running Dispatch Server
+Sun Jan 24 08:15:45 2021: Version 2.2.0
+Sun Jan 24 08:15:54 2021: Dispatch Server: Accepted socket connection from client
+Sun Jan 24 08:15:54 2021: Starting Socket connection
+Sun Jan 24 08:15:54 2021: EXCHANGE_TOKEN received, server token: 1fdde0ff-e7d9-470d-937e-3c0d6fb4aadf, passed token: 1fdde0ff-e7d9-470d-937e-3c0d6fb4aadf
+Sun Jan 24 08:15:55 2021: DISPATCH_HANDLER: Adding handler from function makeHandler in library libxv_system_diagram
+Sun Jan 24 08:15:55 2021: SESSION_MGR: creating session with session uuid: 'e565c02c-ea11-4cd6-8c69-27b20bb5e822' and name 'v++_compile_top'
+Sun Jan 24 08:15:55 2021: KERNEL_SVC: creating session with uuid: 'e565c02c-ea11-4cd6-8c69-27b20bb5e822' and name 'v++_compile_top'
+Sun Jan 24 08:15:55 2021: GUIDANCE_SMGR: creating guidance session with uuid: 'e565c02c-ea11-4cd6-8c69-27b20bb5e822' and name 'v++_compile_top'
+Sun Jan 24 08:15:55 2021: SYSTEM_DIAGRAM: creating session with uuid: 'e565c02c-ea11-4cd6-8c69-27b20bb5e822' and name 'v++_compile_top'
+Sun Jan 24 08:16:10 2021: SESSION_MGR: closing session for UUID 'e565c02c-ea11-4cd6-8c69-27b20bb5e822' with name 'v++_compile_top'
+Sun Jan 24 08:16:10 2021: KERNEL_SVC: closing session for UUID 'e565c02c-ea11-4cd6-8c69-27b20bb5e822' with name 'v++_compile_top'
+Sun Jan 24 08:16:10 2021: GUIDANCE_SMGR: closing session for UUID 'e565c02c-ea11-4cd6-8c69-27b20bb5e822' with name 'v++_compile_top'
+Sun Jan 24 08:16:10 2021: SYSTEM_DIAGRAM: closing session for UUID 'e565c02c-ea11-4cd6-8c69-27b20bb5e822' with name 'v++_compile_top'
+Sun Jan 24 08:15:46 2021: Running xcd server. This server was built by gradle.
+Sun Jan 24 08:15:46 2021: Server was asked to start on port: '37937'
+Sun Jan 24 08:15:46 2021: Server is using token UUID: 'c10eada5-d68c-4e1c-96d4-97d70accd7a6'
+Sun Jan 24 08:15:46 2021: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+Sun Jan 24 08:15:46 2021: Attempting to start server on port '37937'
+Sun Jan 24 08:15:46 2021: XCD main fifo: created main fifo '/tmp/xcdmainc10eada5-d68c-4e1c-96d4-97d70accd7a6', fd read = 15
+Sun Jan 24 08:15:46 2021: Running Dispatch Server
+Sun Jan 24 08:15:46 2021: Version 2.2.0
+Sun Jan 24 08:15:55 2021: Dispatch Server: Accepted socket connection from client
+Sun Jan 24 08:15:55 2021: Starting Socket connection
+Sun Jan 24 08:15:55 2021: EXCHANGE_TOKEN received, server token: c10eada5-d68c-4e1c-96d4-97d70accd7a6, passed token: c10eada5-d68c-4e1c-96d4-97d70accd7a6
+Sun Jan 24 08:15:56 2021: DISPATCH_HANDLER: Adding handler from function makeHandler in library libxv_system_diagram
+Sun Jan 24 08:15:56 2021: SESSION_MGR: creating session with session uuid: '132c21ab-7bb9-4ef3-b8be-b915646fd9d6' and name 'v++_compile_top'
+Sun Jan 24 08:15:56 2021: KERNEL_SVC: creating session with uuid: '132c21ab-7bb9-4ef3-b8be-b915646fd9d6' and name 'v++_compile_top'
+Sun Jan 24 08:15:56 2021: GUIDANCE_SMGR: creating guidance session with uuid: '132c21ab-7bb9-4ef3-b8be-b915646fd9d6' and name 'v++_compile_top'
+Sun Jan 24 08:15:56 2021: SYSTEM_DIAGRAM: creating session with uuid: '132c21ab-7bb9-4ef3-b8be-b915646fd9d6' and name 'v++_compile_top'
+Sun Jan 24 08:16:11 2021: SESSION_MGR: closing session for UUID '132c21ab-7bb9-4ef3-b8be-b915646fd9d6' with name 'v++_compile_top'
+Sun Jan 24 08:16:11 2021: KERNEL_SVC: closing session for UUID '132c21ab-7bb9-4ef3-b8be-b915646fd9d6' with name 'v++_compile_top'
+Sun Jan 24 08:16:11 2021: GUIDANCE_SMGR: closing session for UUID '132c21ab-7bb9-4ef3-b8be-b915646fd9d6' with name 'v++_compile_top'
+Sun Jan 24 08:16:11 2021: SYSTEM_DIAGRAM: closing session for UUID '132c21ab-7bb9-4ef3-b8be-b915646fd9d6' with name 'v++_compile_top'
+Sun Jan 24 08:45:46 2021: Dispatch Server timeout; shutting down.
+Sun Jan 24 08:45:46 2021: Dispatch Server: do_await_stop
+Sun Jan 24 08:45:46 2021: Dispatch Server: stopping mainFifo_
+Sun Jan 24 08:45:46 2021: On server, in MainFifo::stop() 
+Sun Jan 24 08:45:46 2021: XCD main fifo: do_read error code: Operation canceled
+XCD main fifo: bytes_transferred: 0
+Sun Jan 24 08:45:46 2021: SERVER: destructor for server bound to port 45395
+Sun Jan 24 08:45:46 2021: XCD main fifo: Good unlink of /tmp/xcdmain79746629-b5b3-49a8-b3a4-1c65f2978590
+Sun Jan 24 08:45:46 2021: Server exiting with status 0.
+Sun Jan 24 08:45:46 2021: Closing log file.
+Sun Jan 24 08:15:45 2021: Running xcd server. This server was built by gradle.
+Sun Jan 24 08:15:45 2021: Server was asked to start on port: '36683'
+Sun Jan 24 08:15:45 2021: Server is using token UUID: 'e9e65a6f-e97f-4607-8f32-ee1addd6bd3d'
+Sun Jan 24 08:15:45 2021: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+Sun Jan 24 08:15:45 2021: Attempting to start server on port '36683'
+Sun Jan 24 08:15:45 2021: XCD main fifo: created main fifo '/tmp/xcdmaine9e65a6f-e97f-4607-8f32-ee1addd6bd3d', fd read = 15
+Sun Jan 24 08:15:45 2021: Running Dispatch Server
+Sun Jan 24 08:15:45 2021: Version 2.2.0
+Sun Jan 24 08:15:54 2021: Dispatch Server: Accepted socket connection from client
+Sun Jan 24 08:15:54 2021: Starting Socket connection
+Sun Jan 24 08:15:54 2021: EXCHANGE_TOKEN received, server token: e9e65a6f-e97f-4607-8f32-ee1addd6bd3d, passed token: e9e65a6f-e97f-4607-8f32-ee1addd6bd3d
+Sun Jan 24 08:15:55 2021: DISPATCH_HANDLER: Adding handler from function makeHandler in library libxv_system_diagram
+Sun Jan 24 08:15:55 2021: SESSION_MGR: creating session with session uuid: '99f702f5-9cac-4a3d-a240-bd84e9a6839a' and name 'v++_compile_top'
+Sun Jan 24 08:15:55 2021: KERNEL_SVC: creating session with uuid: '99f702f5-9cac-4a3d-a240-bd84e9a6839a' and name 'v++_compile_top'
+Sun Jan 24 08:15:55 2021: GUIDANCE_SMGR: creating guidance session with uuid: '99f702f5-9cac-4a3d-a240-bd84e9a6839a' and name 'v++_compile_top'
+Sun Jan 24 08:15:55 2021: SYSTEM_DIAGRAM: creating session with uuid: '99f702f5-9cac-4a3d-a240-bd84e9a6839a' and name 'v++_compile_top'
+Sun Jan 24 08:16:10 2021: SESSION_MGR: closing session for UUID '99f702f5-9cac-4a3d-a240-bd84e9a6839a' with name 'v++_compile_top'
+Sun Jan 24 08:16:10 2021: KERNEL_SVC: closing session for UUID '99f702f5-9cac-4a3d-a240-bd84e9a6839a' with name 'v++_compile_top'
+Sun Jan 24 08:16:10 2021: GUIDANCE_SMGR: closing session for UUID '99f702f5-9cac-4a3d-a240-bd84e9a6839a' with name 'v++_compile_top'
+Sun Jan 24 08:16:10 2021: SYSTEM_DIAGRAM: closing session for UUID '99f702f5-9cac-4a3d-a240-bd84e9a6839a' with name 'v++_compile_top'
+Sun Jan 24 08:15:45 2021: Running xcd server. This server was built by gradle.
+Sun Jan 24 08:15:45 2021: Server was asked to start on port: '35109'
+Sun Jan 24 08:15:45 2021: Server is using token UUID: '74f81c9f-c72e-4abb-9b3d-bc851448c74f'
+Sun Jan 24 08:15:45 2021: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+Sun Jan 24 08:15:45 2021: Attempting to start server on port '35109'
+Sun Jan 24 08:15:45 2021: XCD main fifo: created main fifo '/tmp/xcdmain74f81c9f-c72e-4abb-9b3d-bc851448c74f', fd read = 15
+Sun Jan 24 08:15:45 2021: Running Dispatch Server
+Sun Jan 24 08:15:45 2021: Version 2.2.0
+Sun Jan 24 08:15:54 2021: Dispatch Server: Accepted socket connection from client
+Sun Jan 24 08:15:54 2021: Starting Socket connection
+Sun Jan 24 08:15:54 2021: EXCHANGE_TOKEN received, server token: 74f81c9f-c72e-4abb-9b3d-bc851448c74f, passed token: 74f81c9f-c72e-4abb-9b3d-bc851448c74f
+Sun Jan 24 08:15:55 2021: DISPATCH_HANDLER: Adding handler from function makeHandler in library libxv_system_diagram
+Sun Jan 24 08:15:55 2021: SESSION_MGR: creating session with session uuid: 'dc37148a-802b-4775-a34a-9c1648ab4d38' and name 'v++_compile_top'
+Sun Jan 24 08:15:55 2021: KERNEL_SVC: creating session with uuid: 'dc37148a-802b-4775-a34a-9c1648ab4d38' and name 'v++_compile_top'
+Sun Jan 24 08:15:55 2021: GUIDANCE_SMGR: creating guidance session with uuid: 'dc37148a-802b-4775-a34a-9c1648ab4d38' and name 'v++_compile_top'
+Sun Jan 24 08:15:55 2021: SYSTEM_DIAGRAM: creating session with uuid: 'dc37148a-802b-4775-a34a-9c1648ab4d38' and name 'v++_compile_top'
+Sun Jan 24 08:16:10 2021: SESSION_MGR: closing session for UUID 'dc37148a-802b-4775-a34a-9c1648ab4d38' with name 'v++_compile_top'
+Sun Jan 24 08:16:10 2021: KERNEL_SVC: closing session for UUID 'dc37148a-802b-4775-a34a-9c1648ab4d38' with name 'v++_compile_top'
+Sun Jan 24 08:16:10 2021: GUIDANCE_SMGR: closing session for UUID 'dc37148a-802b-4775-a34a-9c1648ab4d38' with name 'v++_compile_top'
+Sun Jan 24 08:16:10 2021: SYSTEM_DIAGRAM: closing session for UUID 'dc37148a-802b-4775-a34a-9c1648ab4d38' with name 'v++_compile_top'
+Sun Jan 24 08:15:46 2021: Running xcd server. This server was built by gradle.
+Sun Jan 24 08:15:46 2021: Server was asked to start on port: '45771'
+Sun Jan 24 08:15:46 2021: Server is using token UUID: '8e468f02-5c03-4331-b765-3187ecda495a'
+Sun Jan 24 08:15:46 2021: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+Sun Jan 24 08:15:46 2021: Attempting to start server on port '45771'
+Sun Jan 24 08:15:46 2021: XCD main fifo: created main fifo '/tmp/xcdmain8e468f02-5c03-4331-b765-3187ecda495a', fd read = 15
+Sun Jan 24 08:15:46 2021: Running Dispatch Server
+Sun Jan 24 08:15:46 2021: Version 2.2.0
+Sun Jan 24 08:15:54 2021: Dispatch Server: Accepted socket connection from client
+Sun Jan 24 08:15:54 2021: Starting Socket connection
+Sun Jan 24 08:15:54 2021: EXCHANGE_TOKEN received, server token: 8e468f02-5c03-4331-b765-3187ecda495a, passed token: 8e468f02-5c03-4331-b765-3187ecda495a
+Sun Jan 24 08:15:55 2021: DISPATCH_HANDLER: Adding handler from function makeHandler in library libxv_system_diagram
+Sun Jan 24 08:15:55 2021: SESSION_MGR: creating session with session uuid: '5938f4e0-2be4-40de-9bec-e9417b648761' and name 'v++_compile_top'
+Sun Jan 24 08:15:55 2021: KERNEL_SVC: creating session with uuid: '5938f4e0-2be4-40de-9bec-e9417b648761' and name 'v++_compile_top'
+Sun Jan 24 08:15:55 2021: GUIDANCE_SMGR: creating guidance session with uuid: '5938f4e0-2be4-40de-9bec-e9417b648761' and name 'v++_compile_top'
+Sun Jan 24 08:15:55 2021: SYSTEM_DIAGRAM: creating session with uuid: '5938f4e0-2be4-40de-9bec-e9417b648761' and name 'v++_compile_top'
+Sun Jan 24 08:16:11 2021: SESSION_MGR: closing session for UUID '5938f4e0-2be4-40de-9bec-e9417b648761' with name 'v++_compile_top'
+Sun Jan 24 08:16:11 2021: KERNEL_SVC: closing session for UUID '5938f4e0-2be4-40de-9bec-e9417b648761' with name 'v++_compile_top'
+Sun Jan 24 08:16:11 2021: GUIDANCE_SMGR: closing session for UUID '5938f4e0-2be4-40de-9bec-e9417b648761' with name 'v++_compile_top'
+Sun Jan 24 08:16:11 2021: SYSTEM_DIAGRAM: closing session for UUID '5938f4e0-2be4-40de-9bec-e9417b648761' with name 'v++_compile_top'
+Sun Jan 24 08:15:45 2021: Running xcd server. This server was built by gradle.
+Sun Jan 24 08:15:45 2021: Server was asked to start on port: '40769'
+Sun Jan 24 08:15:45 2021: Server is using token UUID: '129c05e0-eda3-4cf8-8369-ef298977e641'
+Sun Jan 24 08:15:45 2021: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+Sun Jan 24 08:15:45 2021: Attempting to start server on port '40769'
+Sun Jan 24 08:15:45 2021: XCD main fifo: created main fifo '/tmp/xcdmain129c05e0-eda3-4cf8-8369-ef298977e641', fd read = 15
+Sun Jan 24 08:15:45 2021: Running Dispatch Server
+Sun Jan 24 08:15:45 2021: Version 2.2.0
+Sun Jan 24 08:15:54 2021: Dispatch Server: Accepted socket connection from client
+Sun Jan 24 08:15:54 2021: Starting Socket connection
+Sun Jan 24 08:15:54 2021: EXCHANGE_TOKEN received, server token: 129c05e0-eda3-4cf8-8369-ef298977e641, passed token: 129c05e0-eda3-4cf8-8369-ef298977e641
+Sun Jan 24 08:15:55 2021: DISPATCH_HANDLER: Adding handler from function makeHandler in library libxv_system_diagram
+Sun Jan 24 08:15:55 2021: SESSION_MGR: creating session with session uuid: '824a2303-caf4-4a2e-8824-d0ff95b61819' and name 'v++_compile_top'
+Sun Jan 24 08:15:55 2021: KERNEL_SVC: creating session with uuid: '824a2303-caf4-4a2e-8824-d0ff95b61819' and name 'v++_compile_top'
+Sun Jan 24 08:15:55 2021: GUIDANCE_SMGR: creating guidance session with uuid: '824a2303-caf4-4a2e-8824-d0ff95b61819' and name 'v++_compile_top'
+Sun Jan 24 08:15:55 2021: SYSTEM_DIAGRAM: creating session with uuid: '824a2303-caf4-4a2e-8824-d0ff95b61819' and name 'v++_compile_top'
+Sun Jan 24 08:16:21 2021: SESSION_MGR: closing session for UUID '824a2303-caf4-4a2e-8824-d0ff95b61819' with name 'v++_compile_top'
+Sun Jan 24 08:16:21 2021: KERNEL_SVC: closing session for UUID '824a2303-caf4-4a2e-8824-d0ff95b61819' with name 'v++_compile_top'
+Sun Jan 24 08:16:21 2021: GUIDANCE_SMGR: closing session for UUID '824a2303-caf4-4a2e-8824-d0ff95b61819' with name 'v++_compile_top'
+Sun Jan 24 08:16:21 2021: SYSTEM_DIAGRAM: closing session for UUID '824a2303-caf4-4a2e-8824-d0ff95b61819' with name 'v++_compile_top'
+Sun Jan 24 08:15:45 2021: Running xcd server. This server was built by gradle.
+Sun Jan 24 08:15:45 2021: Server was asked to start on port: '43009'
+Sun Jan 24 08:15:45 2021: Server is using token UUID: '364d40ef-62da-4b19-ad39-7b6785a4a7f6'
+Sun Jan 24 08:15:45 2021: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+Sun Jan 24 08:15:45 2021: Attempting to start server on port '43009'
+Sun Jan 24 08:15:45 2021: XCD main fifo: created main fifo '/tmp/xcdmain364d40ef-62da-4b19-ad39-7b6785a4a7f6', fd read = 15
+Sun Jan 24 08:15:45 2021: Running Dispatch Server
+Sun Jan 24 08:15:45 2021: Version 2.2.0
+Sun Jan 24 08:15:54 2021: Dispatch Server: Accepted socket connection from client
+Sun Jan 24 08:15:54 2021: Starting Socket connection
+Sun Jan 24 08:15:54 2021: EXCHANGE_TOKEN received, server token: 364d40ef-62da-4b19-ad39-7b6785a4a7f6, passed token: 364d40ef-62da-4b19-ad39-7b6785a4a7f6
+Sun Jan 24 08:15:55 2021: DISPATCH_HANDLER: Adding handler from function makeHandler in library libxv_system_diagram
+Sun Jan 24 08:15:55 2021: SESSION_MGR: creating session with session uuid: '40e80a66-1ed2-4cf9-88d4-0deb1aeba708' and name 'v++_compile_top'
+Sun Jan 24 08:15:55 2021: KERNEL_SVC: creating session with uuid: '40e80a66-1ed2-4cf9-88d4-0deb1aeba708' and name 'v++_compile_top'
+Sun Jan 24 08:15:55 2021: GUIDANCE_SMGR: creating guidance session with uuid: '40e80a66-1ed2-4cf9-88d4-0deb1aeba708' and name 'v++_compile_top'
+Sun Jan 24 08:15:55 2021: SYSTEM_DIAGRAM: creating session with uuid: '40e80a66-1ed2-4cf9-88d4-0deb1aeba708' and name 'v++_compile_top'
+Sun Jan 24 08:16:21 2021: SESSION_MGR: closing session for UUID '40e80a66-1ed2-4cf9-88d4-0deb1aeba708' with name 'v++_compile_top'
+Sun Jan 24 08:16:21 2021: KERNEL_SVC: closing session for UUID '40e80a66-1ed2-4cf9-88d4-0deb1aeba708' with name 'v++_compile_top'
+Sun Jan 24 08:16:21 2021: GUIDANCE_SMGR: closing session for UUID '40e80a66-1ed2-4cf9-88d4-0deb1aeba708' with name 'v++_compile_top'
+Sun Jan 24 08:16:21 2021: SYSTEM_DIAGRAM: closing session for UUID '40e80a66-1ed2-4cf9-88d4-0deb1aeba708' with name 'v++_compile_top'
+Sun Jan 24 08:15:45 2021: Running xcd server. This server was built by gradle.
+Sun Jan 24 08:15:45 2021: Server was asked to start on port: '36107'
+Sun Jan 24 08:15:45 2021: Server is using token UUID: 'c7b6a143-f9ad-4c55-aab1-32955434f63d'
+Sun Jan 24 08:15:45 2021: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+Sun Jan 24 08:15:45 2021: Attempting to start server on port '36107'
+Sun Jan 24 08:15:45 2021: XCD main fifo: created main fifo '/tmp/xcdmainc7b6a143-f9ad-4c55-aab1-32955434f63d', fd read = 15
+Sun Jan 24 08:15:45 2021: Running Dispatch Server
+Sun Jan 24 08:15:45 2021: Version 2.2.0
+Sun Jan 24 08:15:54 2021: Dispatch Server: Accepted socket connection from client
+Sun Jan 24 08:15:54 2021: Starting Socket connection
+Sun Jan 24 08:15:54 2021: EXCHANGE_TOKEN received, server token: c7b6a143-f9ad-4c55-aab1-32955434f63d, passed token: c7b6a143-f9ad-4c55-aab1-32955434f63d
+Sun Jan 24 08:15:55 2021: DISPATCH_HANDLER: Adding handler from function makeHandler in library libxv_system_diagram
+Sun Jan 24 08:15:55 2021: SESSION_MGR: creating session with session uuid: '0169bc0a-51ae-4c7e-813d-f29f982727ba' and name 'v++_compile_top'
+Sun Jan 24 08:15:55 2021: KERNEL_SVC: creating session with uuid: '0169bc0a-51ae-4c7e-813d-f29f982727ba' and name 'v++_compile_top'
+Sun Jan 24 08:15:55 2021: GUIDANCE_SMGR: creating guidance session with uuid: '0169bc0a-51ae-4c7e-813d-f29f982727ba' and name 'v++_compile_top'
+Sun Jan 24 08:15:55 2021: SYSTEM_DIAGRAM: creating session with uuid: '0169bc0a-51ae-4c7e-813d-f29f982727ba' and name 'v++_compile_top'
+Sun Jan 24 08:16:46 2021: SESSION_MGR: closing session for UUID '0169bc0a-51ae-4c7e-813d-f29f982727ba' with name 'v++_compile_top'
+Sun Jan 24 08:16:46 2021: KERNEL_SVC: closing session for UUID '0169bc0a-51ae-4c7e-813d-f29f982727ba' with name 'v++_compile_top'
+Sun Jan 24 08:16:46 2021: GUIDANCE_SMGR: closing session for UUID '0169bc0a-51ae-4c7e-813d-f29f982727ba' with name 'v++_compile_top'
+Sun Jan 24 08:16:46 2021: SYSTEM_DIAGRAM: closing session for UUID '0169bc0a-51ae-4c7e-813d-f29f982727ba' with name 'v++_compile_top'
+Sun Jan 24 08:15:45 2021: Running xcd server. This server was built by gradle.
+Sun Jan 24 08:15:45 2021: Server was asked to start on port: '42609'
+Sun Jan 24 08:15:45 2021: Server is using token UUID: '840928e9-d5ab-4a6a-acde-79a3a099faa8'
+Sun Jan 24 08:15:45 2021: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+Sun Jan 24 08:15:45 2021: Attempting to start server on port '42609'
+Sun Jan 24 08:15:45 2021: XCD main fifo: created main fifo '/tmp/xcdmain840928e9-d5ab-4a6a-acde-79a3a099faa8', fd read = 15
+Sun Jan 24 08:15:45 2021: Running Dispatch Server
+Sun Jan 24 08:15:45 2021: Version 2.2.0
+Sun Jan 24 08:15:54 2021: Dispatch Server: Accepted socket connection from client
+Sun Jan 24 08:15:54 2021: Starting Socket connection
+Sun Jan 24 08:15:54 2021: EXCHANGE_TOKEN received, server token: 840928e9-d5ab-4a6a-acde-79a3a099faa8, passed token: 840928e9-d5ab-4a6a-acde-79a3a099faa8
+Sun Jan 24 08:15:55 2021: DISPATCH_HANDLER: Adding handler from function makeHandler in library libxv_system_diagram
+Sun Jan 24 08:15:55 2021: SESSION_MGR: creating session with session uuid: '0e64f54f-feab-47c9-ba16-d77842bbcdd8' and name 'v++_link_top'
+Sun Jan 24 08:15:55 2021: KERNEL_SVC: creating session with uuid: '0e64f54f-feab-47c9-ba16-d77842bbcdd8' and name 'v++_link_top'
+Sun Jan 24 08:15:55 2021: GUIDANCE_SMGR: creating guidance session with uuid: '0e64f54f-feab-47c9-ba16-d77842bbcdd8' and name 'v++_link_top'
+Sun Jan 24 08:15:55 2021: SYSTEM_DIAGRAM: creating session with uuid: '0e64f54f-feab-47c9-ba16-d77842bbcdd8' and name 'v++_link_top'
+Sun Jan 24 08:16:18 2021: SESSION_MGR: closing session for UUID '0e64f54f-feab-47c9-ba16-d77842bbcdd8' with name 'v++_link_top'
+Sun Jan 24 08:16:18 2021: KERNEL_SVC: closing session for UUID '0e64f54f-feab-47c9-ba16-d77842bbcdd8' with name 'v++_link_top'
+Sun Jan 24 08:16:18 2021: GUIDANCE_SMGR: closing session for UUID '0e64f54f-feab-47c9-ba16-d77842bbcdd8' with name 'v++_link_top'
+Sun Jan 24 08:16:18 2021: SYSTEM_DIAGRAM: closing session for UUID '0e64f54f-feab-47c9-ba16-d77842bbcdd8' with name 'v++_link_top'
+Sun Jan 24 08:15:45 2021: Running xcd server. This server was built by gradle.
+Sun Jan 24 08:15:45 2021: Server was asked to start on port: '43245'
+Sun Jan 24 08:15:45 2021: Server is using token UUID: '56003504-73dc-4cc2-bf5c-ce73ef3a8068'
+Sun Jan 24 08:15:45 2021: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+Sun Jan 24 08:15:45 2021: Attempting to start server on port '43245'
+Sun Jan 24 08:15:45 2021: XCD main fifo: created main fifo '/tmp/xcdmain56003504-73dc-4cc2-bf5c-ce73ef3a8068', fd read = 15
+Sun Jan 24 08:15:45 2021: Running Dispatch Server
+Sun Jan 24 08:15:45 2021: Version 2.2.0
+Sun Jan 24 08:15:54 2021: Dispatch Server: Accepted socket connection from client
+Sun Jan 24 08:15:54 2021: Starting Socket connection
+Sun Jan 24 08:15:54 2021: EXCHANGE_TOKEN received, server token: 56003504-73dc-4cc2-bf5c-ce73ef3a8068, passed token: 56003504-73dc-4cc2-bf5c-ce73ef3a8068
+Sun Jan 24 08:15:55 2021: DISPATCH_HANDLER: Adding handler from function makeHandler in library libxv_system_diagram
+Sun Jan 24 08:15:55 2021: SESSION_MGR: creating session with session uuid: '5aad792a-43d8-4221-ad47-8f9480861d8c' and name 'v++_compile_top'
+Sun Jan 24 08:15:55 2021: KERNEL_SVC: creating session with uuid: '5aad792a-43d8-4221-ad47-8f9480861d8c' and name 'v++_compile_top'
+Sun Jan 24 08:15:55 2021: GUIDANCE_SMGR: creating guidance session with uuid: '5aad792a-43d8-4221-ad47-8f9480861d8c' and name 'v++_compile_top'
+Sun Jan 24 08:15:55 2021: SYSTEM_DIAGRAM: creating session with uuid: '5aad792a-43d8-4221-ad47-8f9480861d8c' and name 'v++_compile_top'
+Sun Jan 24 08:17:11 2021: SESSION_MGR: closing session for UUID '5aad792a-43d8-4221-ad47-8f9480861d8c' with name 'v++_compile_top'
+Sun Jan 24 08:17:11 2021: KERNEL_SVC: closing session for UUID '5aad792a-43d8-4221-ad47-8f9480861d8c' with name 'v++_compile_top'
+Sun Jan 24 08:17:11 2021: GUIDANCE_SMGR: closing session for UUID '5aad792a-43d8-4221-ad47-8f9480861d8c' with name 'v++_compile_top'
+Sun Jan 24 08:17:11 2021: SYSTEM_DIAGRAM: closing session for UUID '5aad792a-43d8-4221-ad47-8f9480861d8c' with name 'v++_compile_top'
+Sun Jan 24 08:15:45 2021: Running xcd server. This server was built by gradle.
+Sun Jan 24 08:15:45 2021: Server was asked to start on port: '42673'
+Sun Jan 24 08:15:45 2021: Server is using token UUID: 'a52c9431-88b7-479b-aae0-e27c84e0e2cf'
+Sun Jan 24 08:15:45 2021: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+Sun Jan 24 08:15:45 2021: Attempting to start server on port '42673'
+Sun Jan 24 08:15:45 2021: XCD main fifo: created main fifo '/tmp/xcdmaina52c9431-88b7-479b-aae0-e27c84e0e2cf', fd read = 15
+Sun Jan 24 08:15:45 2021: Running Dispatch Server
+Sun Jan 24 08:15:45 2021: Version 2.2.0
+Sun Jan 24 08:15:54 2021: Dispatch Server: Accepted socket connection from client
+Sun Jan 24 08:15:54 2021: Starting Socket connection
+Sun Jan 24 08:15:54 2021: EXCHANGE_TOKEN received, server token: a52c9431-88b7-479b-aae0-e27c84e0e2cf, passed token: a52c9431-88b7-479b-aae0-e27c84e0e2cf
+Sun Jan 24 08:15:55 2021: DISPATCH_HANDLER: Adding handler from function makeHandler in library libxv_system_diagram
+Sun Jan 24 08:15:55 2021: SESSION_MGR: creating session with session uuid: 'e8ca9116-aac2-4858-928f-f7b237ad3649' and name 'v++_link_top'
+Sun Jan 24 08:15:55 2021: KERNEL_SVC: creating session with uuid: 'e8ca9116-aac2-4858-928f-f7b237ad3649' and name 'v++_link_top'
+Sun Jan 24 08:15:55 2021: GUIDANCE_SMGR: creating guidance session with uuid: 'e8ca9116-aac2-4858-928f-f7b237ad3649' and name 'v++_link_top'
+Sun Jan 24 08:15:55 2021: SYSTEM_DIAGRAM: creating session with uuid: 'e8ca9116-aac2-4858-928f-f7b237ad3649' and name 'v++_link_top'
+Sun Jan 24 08:16:16 2021: SESSION_MGR: closing session for UUID 'e8ca9116-aac2-4858-928f-f7b237ad3649' with name 'v++_link_top'
+Sun Jan 24 08:16:16 2021: KERNEL_SVC: closing session for UUID 'e8ca9116-aac2-4858-928f-f7b237ad3649' with name 'v++_link_top'
+Sun Jan 24 08:16:16 2021: GUIDANCE_SMGR: closing session for UUID 'e8ca9116-aac2-4858-928f-f7b237ad3649' with name 'v++_link_top'
+Sun Jan 24 08:16:16 2021: SYSTEM_DIAGRAM: closing session for UUID 'e8ca9116-aac2-4858-928f-f7b237ad3649' with name 'v++_link_top'
+Sun Jan 24 08:15:45 2021: Running xcd server. This server was built by gradle.
+Sun Jan 24 08:15:45 2021: Server was asked to start on port: '46247'
+Sun Jan 24 08:15:45 2021: Server is using token UUID: 'ae6a04fc-9f5d-4d31-b3a3-77833e6087c8'
+Sun Jan 24 08:15:45 2021: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+Sun Jan 24 08:15:45 2021: Attempting to start server on port '46247'
+Sun Jan 24 08:15:45 2021: XCD main fifo: created main fifo '/tmp/xcdmainae6a04fc-9f5d-4d31-b3a3-77833e6087c8', fd read = 15
+Sun Jan 24 08:15:45 2021: Running Dispatch Server
+Sun Jan 24 08:15:45 2021: Version 2.2.0
+Sun Jan 24 08:15:54 2021: Dispatch Server: Accepted socket connection from client
+Sun Jan 24 08:15:54 2021: Starting Socket connection
+Sun Jan 24 08:15:54 2021: EXCHANGE_TOKEN received, server token: ae6a04fc-9f5d-4d31-b3a3-77833e6087c8, passed token: ae6a04fc-9f5d-4d31-b3a3-77833e6087c8
+Sun Jan 24 08:15:55 2021: DISPATCH_HANDLER: Adding handler from function makeHandler in library libxv_system_diagram
+Sun Jan 24 08:15:55 2021: SESSION_MGR: creating session with session uuid: '04eb0064-2be2-4211-a621-303e572a7492' and name 'v++_link_top'
+Sun Jan 24 08:15:55 2021: KERNEL_SVC: creating session with uuid: '04eb0064-2be2-4211-a621-303e572a7492' and name 'v++_link_top'
+Sun Jan 24 08:15:55 2021: GUIDANCE_SMGR: creating guidance session with uuid: '04eb0064-2be2-4211-a621-303e572a7492' and name 'v++_link_top'
+Sun Jan 24 08:15:55 2021: SYSTEM_DIAGRAM: creating session with uuid: '04eb0064-2be2-4211-a621-303e572a7492' and name 'v++_link_top'
+Sun Jan 24 08:16:16 2021: SESSION_MGR: closing session for UUID '04eb0064-2be2-4211-a621-303e572a7492' with name 'v++_link_top'
+Sun Jan 24 08:16:16 2021: KERNEL_SVC: closing session for UUID '04eb0064-2be2-4211-a621-303e572a7492' with name 'v++_link_top'
+Sun Jan 24 08:16:16 2021: GUIDANCE_SMGR: closing session for UUID '04eb0064-2be2-4211-a621-303e572a7492' with name 'v++_link_top'
+Sun Jan 24 08:16:16 2021: SYSTEM_DIAGRAM: closing session for UUID '04eb0064-2be2-4211-a621-303e572a7492' with name 'v++_link_top'
+Sun Jan 24 08:15:46 2021: Running xcd server. This server was built by gradle.
+Sun Jan 24 08:15:46 2021: Server was asked to start on port: '45249'
+Sun Jan 24 08:15:46 2021: Server is using token UUID: '54c25bd1-0d22-4077-9d5e-505b6c0b1221'
+Sun Jan 24 08:15:46 2021: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+Sun Jan 24 08:15:46 2021: Attempting to start server on port '45249'
+Sun Jan 24 08:15:46 2021: XCD main fifo: created main fifo '/tmp/xcdmain54c25bd1-0d22-4077-9d5e-505b6c0b1221', fd read = 14
+Sun Jan 24 08:15:46 2021: Running Dispatch Server
+Sun Jan 24 08:15:46 2021: Version 2.2.0
+Sun Jan 24 08:15:55 2021: Dispatch Server: Accepted socket connection from client
+Sun Jan 24 08:15:55 2021: Starting Socket connection
+Sun Jan 24 08:15:55 2021: EXCHANGE_TOKEN received, server token: 54c25bd1-0d22-4077-9d5e-505b6c0b1221, passed token: 54c25bd1-0d22-4077-9d5e-505b6c0b1221
+Sun Jan 24 08:15:56 2021: DISPATCH_HANDLER: Adding handler from function makeHandler in library libxv_system_diagram
+Sun Jan 24 08:15:56 2021: SESSION_MGR: creating session with session uuid: 'a445214b-f0d5-4ad3-bbb5-bcb702253915' and name 'v++_compile_top'
+Sun Jan 24 08:15:56 2021: KERNEL_SVC: creating session with uuid: 'a445214b-f0d5-4ad3-bbb5-bcb702253915' and name 'v++_compile_top'
+Sun Jan 24 08:15:56 2021: GUIDANCE_SMGR: creating guidance session with uuid: 'a445214b-f0d5-4ad3-bbb5-bcb702253915' and name 'v++_compile_top'
+Sun Jan 24 08:15:56 2021: SYSTEM_DIAGRAM: creating session with uuid: 'a445214b-f0d5-4ad3-bbb5-bcb702253915' and name 'v++_compile_top'
+Sun Jan 24 08:16:48 2021: SESSION_MGR: closing session for UUID 'a445214b-f0d5-4ad3-bbb5-bcb702253915' with name 'v++_compile_top'
+Sun Jan 24 08:16:48 2021: KERNEL_SVC: closing session for UUID 'a445214b-f0d5-4ad3-bbb5-bcb702253915' with name 'v++_compile_top'
+Sun Jan 24 08:16:48 2021: GUIDANCE_SMGR: closing session for UUID 'a445214b-f0d5-4ad3-bbb5-bcb702253915' with name 'v++_compile_top'
+Sun Jan 24 08:16:48 2021: SYSTEM_DIAGRAM: closing session for UUID 'a445214b-f0d5-4ad3-bbb5-bcb702253915' with name 'v++_compile_top'

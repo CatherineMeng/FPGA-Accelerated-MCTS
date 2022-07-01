@@ -1,0 +1,176 @@
+
+
+================================================================
+== Vitis HLS Report for 'subT1_lev_stage_4'
+================================================================
+* Date:           Sun Jan 24 08:16:22 2021
+
+* Version:        2021.2 (Build 3367213 on Tue Oct 19 02:47:39 MDT 2021)
+* Project:        top
+* Solution:       solution (Vitis Kernel Flow Target)
+* Product family: virtexuplus
+* Target device:  xcu200-fsgd2104-2-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  3.33 ns|  2.097 ns|     0.90 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        1|        1|  3.333 ns|  3.333 ns|    1|    1|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++---------------------+---------+------+---------+---------+-----+
+|         Name        | BRAM_18K|  DSP |    FF   |   LUT   | URAM|
++---------------------+---------+------+---------+---------+-----+
+|DSP                  |        -|     -|        -|        -|    -|
+|Expression           |        -|     -|        0|      115|    -|
+|FIFO                 |        -|     -|        -|        -|    -|
+|Instance             |        -|     -|        -|        -|    -|
+|Memory               |        -|     -|        -|        -|    -|
+|Multiplexer          |        -|     -|        -|       86|    -|
+|Register             |        -|     -|      163|        -|    -|
++---------------------+---------+------+---------+---------+-----+
+|Total                |        0|     0|      163|      201|    0|
++---------------------+---------+------+---------+---------+-----+
+|Available SLR        |     1440|  2280|   788160|   394080|  320|
++---------------------+---------+------+---------+---------+-----+
+|Utilization SLR (%)  |        0|     0|       ~0|       ~0|    0|
++---------------------+---------+------+---------+---------+-----+
+|Available            |     4320|  6840|  2364480|  1182240|  960|
++---------------------+---------+------+---------+---------+-----+
+|Utilization (%)      |        0|     0|       ~0|       ~0|    0|
++---------------------+---------+------+---------+---------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +-----------------------+----------+----+---+----+------------+------------+
+    |     Variable Name     | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +-----------------------+----------+----+---+----+------------+------------+
+    |newind_1_fu_195_p2     |         +|   0|  0|  32|          32|           1|
+    |newind_fu_209_p2       |         -|   0|  0|  39|          32|          32|
+    |sub_ln413_fu_189_p2    |         -|   0|  0|  32|          32|          32|
+    |ap_ext_blocking_n      |       and|   0|  0|   2|           2|           2|
+    |ap_int_blocking_cur_n  |       and|   0|  0|   2|           1|           1|
+    |ap_int_blocking_n      |       and|   0|  0|   2|           1|           2|
+    |ap_str_blocking_n      |       and|   0|  0|   2|           2|           2|
+    |ap_block_state1        |        or|   0|  0|   2|           1|           1|
+    |ap_block_state2        |        or|   0|  0|   2|           1|           1|
+    +-----------------------+----------+----+---+----+------------+------------+
+    |Total                  |          |   0|  0| 115|         104|          74|
+    +-----------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-----------------------------------+----+-----------+-----+-----------+
+    |                Name               | LUT| Input Size| Bits| Total Bits|
+    +-----------------------------------+----+-----------+-----+-----------+
+    |IDRpipes_0_blk_n                   |   9|          2|    1|          2|
+    |IDRpipes_1_blk_n                   |   9|          2|    1|          2|
+    |ap_NS_fsm                          |  14|          3|    1|          3|
+    |ap_phi_mux_newind_3_phi_fu_140_p4  |   9|          2|   32|         64|
+    |childindexpipe_0_blk_n             |   9|          2|    1|          2|
+    |childindexpipe_1_blk_n             |   9|          2|    1|          2|
+    |lev_retpipe_0_blk_n                |   9|          2|    1|          2|
+    |lev_retpipe_1_blk_n                |   9|          2|    1|          2|
+    |newind_3_reg_137                   |   9|          2|   32|         64|
+    +-----------------------------------+----+-----------+-----+-----------+
+    |Total                              |  86|         19|   71|        143|
+    +-----------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-------------------------+----+----+-----+-----------+
+    |           Name          | FF | LUT| Bits| Const Bits|
+    +-------------------------+----+----+-----+-----------+
+    |IDRpipes_0_read_reg_232  |  64|   0|   64|          0|
+    |ap_CS_fsm                |   2|   0|    2|          0|
+    |newind_3_reg_137         |  32|   0|   32|          0|
+    |newind_reg_242           |  32|   0|   32|          0|
+    |pipeobj_depth_reg_223    |  32|   0|   32|          0|
+    |ret_signal_V_reg_228     |   1|   0|    1|          0|
+    +-------------------------+----+----+-----+-----------+
+    |Total                    | 163|   0|  163|          0|
+    +-------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++---------------------------------+-----+-----+------------+------------------------+--------------+
+|            RTL Ports            | Dir | Bits|  Protocol  |      Source Object     |    C Type    |
++---------------------------------+-----+-----+------------+------------------------+--------------+
+|ap_clk                           |   in|    1|  ap_ctrl_hs|       subT1_lev_stage.4|  return value|
+|ap_rst                           |   in|    1|  ap_ctrl_hs|       subT1_lev_stage.4|  return value|
+|ap_start                         |   in|    1|  ap_ctrl_hs|       subT1_lev_stage.4|  return value|
+|ap_done                          |  out|    1|  ap_ctrl_hs|       subT1_lev_stage.4|  return value|
+|ap_idle                          |  out|    1|  ap_ctrl_hs|       subT1_lev_stage.4|  return value|
+|ap_ready                         |  out|    1|  ap_ctrl_hs|       subT1_lev_stage.4|  return value|
+|ap_ext_blocking_n                |  out|    1|  ap_ctrl_hs|       subT1_lev_stage.4|  return value|
+|ap_str_blocking_n                |  out|    1|  ap_ctrl_hs|       subT1_lev_stage.4|  return value|
+|ap_int_blocking_n                |  out|    1|  ap_ctrl_hs|       subT1_lev_stage.4|  return value|
+|childindexpipe_0_dout            |   in|   64|     ap_fifo|        childindexpipe_0|       pointer|
+|childindexpipe_0_empty_n         |   in|    1|     ap_fifo|        childindexpipe_0|       pointer|
+|childindexpipe_0_read            |  out|    1|     ap_fifo|        childindexpipe_0|       pointer|
+|childindexpipe_1_din             |  out|   64|     ap_fifo|        childindexpipe_1|       pointer|
+|childindexpipe_1_full_n          |   in|    1|     ap_fifo|        childindexpipe_1|       pointer|
+|childindexpipe_1_write           |  out|    1|     ap_fifo|        childindexpipe_1|       pointer|
+|lev_retpipe_0_dout               |   in|    1|     ap_fifo|           lev_retpipe_0|       pointer|
+|lev_retpipe_0_empty_n            |   in|    1|     ap_fifo|           lev_retpipe_0|       pointer|
+|lev_retpipe_0_read               |  out|    1|     ap_fifo|           lev_retpipe_0|       pointer|
+|lev_retpipe_1_din                |  out|    1|     ap_fifo|           lev_retpipe_1|       pointer|
+|lev_retpipe_1_full_n             |   in|    1|     ap_fifo|           lev_retpipe_1|       pointer|
+|lev_retpipe_1_write              |  out|    1|     ap_fifo|           lev_retpipe_1|       pointer|
+|IDRpipes_0_dout                  |   in|   64|     ap_fifo|              IDRpipes_0|       pointer|
+|IDRpipes_0_empty_n               |   in|    1|     ap_fifo|              IDRpipes_0|       pointer|
+|IDRpipes_0_read                  |  out|    1|     ap_fifo|              IDRpipes_0|       pointer|
+|IDRpipes_1_din                   |  out|   64|     ap_fifo|              IDRpipes_1|       pointer|
+|IDRpipes_1_full_n                |   in|    1|     ap_fifo|              IDRpipes_1|       pointer|
+|IDRpipes_1_write                 |  out|    1|     ap_fifo|              IDRpipes_1|       pointer|
+|memoiz_array_par_ind_address0    |  out|    5|   ap_memory|    memoiz_array_par_ind|         array|
+|memoiz_array_par_ind_ce0         |  out|    1|   ap_memory|    memoiz_array_par_ind|         array|
+|memoiz_array_par_ind_we0         |  out|    1|   ap_memory|    memoiz_array_par_ind|         array|
+|memoiz_array_par_ind_d0          |  out|   32|   ap_memory|    memoiz_array_par_ind|         array|
+|memoiz_array_child_ind_address0  |  out|    5|   ap_memory|  memoiz_array_child_ind|         array|
+|memoiz_array_child_ind_ce0       |  out|    1|   ap_memory|  memoiz_array_child_ind|         array|
+|memoiz_array_child_ind_we0       |  out|    1|   ap_memory|  memoiz_array_child_ind|         array|
+|memoiz_array_child_ind_d0        |  out|    1|   ap_memory|  memoiz_array_child_ind|         array|
++---------------------------------+-----+-----+------------+------------------------+--------------+
+

@@ -1,0 +1,65 @@
+
+*** Running vitis_hls
+    with args -f top.tcl -messageDb vitis_hls.pb
+
+
+****** Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.2 (64-bit)
+  **** SW Build 3367213 on Tue Oct 19 02:47:39 MDT 2021
+  **** IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source /media/myuan/working/Vitis_HLS/2021.2/scripts/vitis_hls/hls.tcl -notrace
+INFO: [HLS 200-10] Running '/media/myuan/working/Vitis_HLS/2021.2/bin/unwrapped/lnx64.o/vitis_hls'
+INFO: [HLS 200-10] For user 'myuan' on host 'myuan-System-Product-Name' (Linux_x86_64 version 5.4.0-113-generic) on Fri Jul 01 13:16:57 PDT 2022
+INFO: [HLS 200-10] On os Ubuntu 18.04.5 LTS
+INFO: [HLS 200-10] In directory '/home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/sw_emu/_x/top/top'
+Sourcing Tcl script 'top.tcl'
+INFO: [HLS 200-1510] Running: open_project top 
+INFO: [HLS 200-10] Creating and opening project '/home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/sw_emu/_x/top/top/top'.
+INFO: [HLS 200-1510] Running: set_top top 
+INFO: [HLS 200-1510] Running: add_files /home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/ucteq.cpp -cflags  -g -I /home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src  
+INFO: [HLS 200-10] Adding design file '/home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/ucteq.cpp' to the project
+INFO: [HLS 200-1510] Running: open_solution -flow_target vitis solution 
+INFO: [HLS 200-10] Creating and opening solution '/home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/sw_emu/_x/top/top/top/solution'.
+INFO: [HLS 200-1505] Using flow_target 'vitis'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2021.2;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_latency=64
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_alignment_byte_size=64
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_max_widen_bitwidth=512
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_rtl -register_reset_num=3
+INFO: [HLS 200-1510] Running: set_part xcu200-fsgd2104-2-e 
+INFO: [HLS 200-1611] Setting target device to 'xcu200-fsgd2104-2-e'
+INFO: [HLS 200-1510] Running: create_clock -period 300.000000MHz -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 3.333ns.
+INFO: [HLS 200-1510] Running: config_rtl -kernel_profile 
+INFO: [HLS 200-1510] Running: config_dataflow -strict_mode warning 
+INFO: [HLS 200-1510] Running: config_debug -enable 
+INFO: [HLS 200-1510] Running: config_export -deadlock_detection none 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_conservative_mode=1 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_addr64 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_auto_max_ports=0 
+INFO: [HLS 200-1510] Running: config_export -format xo -ipname top 
+INFO: [HLS 200-1510] Running: csynth_design -synthesis_check 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 1.191 GB.
+INFO: [HLS 200-10] Analyzing design file '/home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/ucteq.cpp' ... 
+WARNING: [HLS 207-5554] Only for-loops and functions support the dataflow (/home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/ucteq.cpp:97:9)
+WARNING: [HLS 207-5554] Only for-loops and functions support the dataflow (/home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/ucteq.cpp:308:9)
+WARNING: [HLS 207-5287] unused parameter 'flushs' (/home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/ucteq.cpp:250:7)
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 3.55 seconds. CPU system time: 0.3 seconds. Elapsed time: 3.44 seconds; current allocated memory: 284.336 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vitis' flow target.
+INFO: [HLS 214-284] Auto array partition mode is set into default.
+INFO: [HLS 214-178] Inlining function 'xbar(hls::stream<ap_int<3>, 0>&, hls::stream<BpSel_inputObj, 0>&, hls::stream<BpSel_inputObj, 0>&, hls::stream<BpSel_inputObj, 0>&, hls::stream<BpSel_inputObj, 0>&, hls::stream<ap_int<1>, 0>&, hls::stream<ap_int<1>, 0>&, hls::stream<ap_int<1>, 0>&)' into 'top' (/home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/ucteq.cpp:29:0)
+INFO: [HLS 214-178] Inlining function 'collect_out(hls::stream<SelTupleOut, 0>&, hls::stream<SelTupleOut, 0>&, hls::stream<SelTupleOut, 0>&, SelTupleOut*)' into 'top' (/home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/ucteq.cpp:29:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZZ10subT1_piplRN3hls6streamI14BpSel_inputObjLi0EEERNS0_I6ap_intILi1EELi0EEERNS0_I11SelTupleOutLi0EEEiE10memoizlevs': Complete partitioning on dimension 1. (/home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/ucteq.cpp:292:0)
+INFO: [HLS 214-248] Applying array_partition to 'lev_retpipe': Complete partitioning on dimension 1. (/home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/ucteq.cpp:253:25)
+INFO: [HLS 214-248] Applying array_partition to 'childindexpipe': Complete partitioning on dimension 1. (/home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/ucteq.cpp:257:24)
+INFO: [HLS 214-248] Applying array_partition to 'IDRpipes': Complete partitioning on dimension 1. (/home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/ucteq.cpp:270:30)
+WARNING: [HLS 214-142] Implementing stream: may cause mismatch if read and write accesses are not in sequential order on port 'out_r' (/home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/ucteq.cpp:29:0)
+Resolution: For help on HLS 214-142 see www.xilinx.com/cgi-bin/docs/rdoc?v=2021.2;t=hls+guidance;d=214-142.html
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 3.37 seconds. CPU system time: 0.27 seconds. Elapsed time: 3.65 seconds; current allocated memory: 292.828 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 292.828 MB.
+INFO: [HLS 200-1493] Running only source code synthesis checks, skipping scheduling and RTL generation.
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 6.93 seconds. CPU system time: 0.58 seconds. Elapsed time: 7.11 seconds; current allocated memory: -926.512 MB.
+HLS completed successfully
+INFO: [HLS 200-112] Total CPU user time: 9.59 seconds. Total CPU system time: 0.97 seconds. Total elapsed time: 8.97 seconds; peak allocated memory: 1.191 GB.
+INFO: [Common 17-206] Exiting vitis_hls at Fri Jul  1 13:17:06 2022...
