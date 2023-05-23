@@ -10,7 +10,7 @@ This repo contains the modules for implementing general Tree-Parallel MCTS, wher
 
 The static folder contains HLS host and device code for a static tree management module, where the SRAM bank (i.e., array) for each full tree level is allocated at compile time. The in-tree operators operate on each tree level in a pipeline manner based on streaming requests.
 
-<img src="https://github.com/CatherineMeng/FPGA-Accelerated-MCTS/tree/blob/main/figs/arch_uct.PNG" alt="drawing" width="250"/>
+<img src="https://github.com/CatherineMeng/FPGA-Accelerated-MCTS/blob/main/figs/arch_uct.PNG" alt="drawing" width="250"/>
 
 ## dynamic
 
@@ -19,7 +19,8 @@ The dynamic folder contains HLS host and device code for a dynamic tree manageme
 ### Stage-Bank Interconnection
 The SRAM banks are dynamically assigned tree level indices at run-time, and the in-tree operators access the banks based on the tree level they are responsible for through the interconnection:
 
-<img src="https://github.com/CatherineMeng/FPGA-Accelerated-MCTS/tree/blob/main/figs/butterfly.png" alt="drawing" width="250"/>
+<img src="https://github.com/CatherineMeng/FPGA-Accelerated-MCTS/blob/main/figs/butterfly.png" alt="drawing" width="250"/>
+
 
 The specification for a module with 32 operators and 64 banks is in dynamic/knl_test_D32Y64_src.
 
@@ -29,7 +30,7 @@ To generate the HLS code for the interconnection design supporting arbitrary tre
 
 Each selection in-tree operator adopts a comparison-lookup-table (CLUT):
 
-<img src="https://github.com/CatherineMeng/FPGA-Accelerated-MCTS/tree/blob/main/figs/CLUT.png" alt="drawing" width="250"/>
+<img src="https://github.com/CatherineMeng/FPGA-Accelerated-MCTS/blob/main/figs/CLUT.png" alt="drawing" width="250"/>
 
 To generate the HLS code for the CLUT design supporting arbitrary tree fanout, refer to dynamic/CodeGen/CLUT Generator.ipynb.
 
