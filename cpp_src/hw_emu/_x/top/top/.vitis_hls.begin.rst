@@ -1,5 +1,0 @@
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vitis_hls" Owner="myuan" Host="myuan-System-Product-Name" Pid="24741" HostCore="8" HostMemory="80304800">
-    </Process>
-</ProcessHandle>
