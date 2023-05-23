@@ -1,0 +1,171 @@
+<ENTRY>
+{
+ "thisFile": "/home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/sw_emu/top.xo.compile_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Fri Jul  1 13:16:48 2022",
+ "timestampMillis": "1656706608304",
+ "buildStep": {
+  "cmdId": "0e0d1878-e775-4424-8296-010c5b741634",
+  "name": "v++",
+  "logFile": "/home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/sw_emu/_x/top/top.steps.log",
+  "commandLine": "/media/myuan/working/Vitis/2021.2/bin/unwrapped/lnx64.o/v++  --vivado.prop \"run.__KERNEL__.{STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS}={-directive sdx_optimization_effort_high}\" --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_route_design_summary steps {route_design} runs {impl_1} options {-max_paths 10}\" --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_post_route_phys_opt_design_summary steps {post_route_phys_opt_design} runs {impl_1} options {-max_paths 10}\" -c -t sw_emu --config ../u200.cfg -k top -I../ ../ucteq.cpp -o top.xo ",
+  "args": [
+   "-c",
+   "-t",
+   "sw_emu",
+   "--config",
+   "../u200.cfg",
+   "-k",
+   "top",
+   "-I../",
+   "../ucteq.cpp",
+   "-o",
+   "top.xo"
+  ],
+  "iniFiles": [
+   {
+    "path": "/home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/u200.cfg",
+    "content": "platform=xilinx_u200_gen3x16_xdma_1_202110_1\r\ndebug=1\r\nsave-temps=1\r\n\r\n[connectivity]\r\nnk=top:1:top_1\r\nsp=top_1.X:PLRAM[1]\r\nsp=top_1.out:PLRAM[0]\r\nsp=top_1.adj_list:PLRAM[0]\r\nsp=top_1.flushs:PLRAM[1]\r\n\r\n#slr=top_1:SLR0\r\n\r\n[profile]\r\ndata=all:all:all\r\n"
+   }
+  ],
+  "cwd": "/home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/sw_emu"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Fri Jul  1 13:16:48 2022",
+ "timestampMillis": "1656706608305",
+ "status": {
+  "cmdId": "0e0d1878-e775-4424-8296-010c5b741634",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Fri Jul  1 13:16:54 2022",
+ "timestampMillis": "1656706614596",
+ "buildSummary": {
+  "hardwarePlatform": "xilinx_u200_gen3x16_xdma_1_202110_1.xpfm",
+  "hardwareDsa": "hw.xsa",
+  "platformDirectory": "/opt/xilinx/platforms/xilinx_u200_gen3x16_xdma_1_202110_1",
+  "runtime": "OpenCL",
+  "systemConfig": "Linux",
+  "flow": "BF_COMPILE",
+  "target": "TT_SW_EMU",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "top",
+     "file": "/home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/sw_emu/top.xo",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/ucteq.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "Vitis V++ Compiler Release 2021.2. SW Build 3363252 on 2021-10-14-04:41:01"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Fri Jul  1 13:16:54 2022",
+ "timestampMillis": "1656706614600",
+ "buildStep": {
+  "cmdId": "11c3d324-7edc-4491-a679-771bd5d17a99",
+  "name": "vitis_hls",
+  "logFile": "/home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/sw_emu/_x/top/top/vitis_hls.log",
+  "commandLine": "vitis_hls -f /home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/sw_emu/_x/top/top/top.tcl -messageDb vitis_hls.pb",
+  "args": [
+   "vitis_hls",
+   "-f",
+   "/home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/sw_emu/_x/top/top/top.tcl",
+   "-messageDb",
+   "vitis_hls.pb"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/sw_emu"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Fri Jul  1 13:16:54 2022",
+ "timestampMillis": "1656706614600",
+ "status": {
+  "cmdId": "11c3d324-7edc-4491-a679-771bd5d17a99",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Fri Jul  1 13:17:06 2022",
+ "timestampMillis": "1656706626518",
+ "status": {
+  "cmdId": "11c3d324-7edc-4491-a679-771bd5d17a99",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri Jul  1 13:17:06 2022",
+ "timestampMillis": "1656706626683",
+ "report": {
+  "path": "/home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/sw_emu/_x/reports/top/v++_compile_top_guidance.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri Jul  1 13:17:06 2022",
+ "timestampMillis": "1656706626684",
+ "report": {
+  "path": "/home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/sw_emu/_x/v++_compile_top_guidance.pb",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Fri Jul  1 13:17:06 2022",
+ "timestampMillis": "1656706626684",
+ "status": {
+  "cmdId": "0e0d1878-e775-4424-8296-010c5b741634",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>

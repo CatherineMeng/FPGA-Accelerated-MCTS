@@ -1,0 +1,5 @@
+note: we have successfully utilize p=2 for Cartpole (occupation rate 0.5~1.0, CPU util 50%~70%), but cannot scale to p>2 (action space), due to some problems with ST (when multiple nodes to be expanded and one node: x is a child of the other node: y, x cannot do expansion-simulation before y simulation is done and populate ST)
+
+TODO: 
+Step 1: all node insertion should happen after all selections. this is to avoid the situation where one node x to be expanded is the child of another to be expanded, y.
+Step 2: use messages such as "EXP_SIM", "NOEXP_SIM", "EXP_NOSIM" (find out: does action=-1 already does this?) in assign exp sim task function calls. When p>2 workers select the same child node, only 2 of them should perform node insertion.

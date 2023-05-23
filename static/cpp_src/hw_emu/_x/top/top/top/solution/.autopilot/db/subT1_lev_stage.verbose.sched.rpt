@@ -1,0 +1,256 @@
+
+
+================================================================
+== Vitis HLS Report for 'subT1_lev_stage'
+================================================================
+* Date:           Sun Jan 24 08:16:20 2021
+
+* Version:        2021.2 (Build 3367213 on Tue Oct 19 02:47:39 MDT 2021)
+* Project:        top
+* Solution:       solution (Vitis Kernel Flow Target)
+* Product family: virtexuplus
+* Target device:  xcu200-fsgd2104-2-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  3.33 ns|  2.350 ns|     0.90 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |  Latency (cycles) |   Latency (absolute)  |  Interval | Pipeline|
+    |   min   |   max   |    min    |    max    | min | max |   Type  |
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |        4|        8|  13.332 ns|  26.664 ns|    4|    8|       no|
+    +---------+---------+-----------+-----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 10
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 9 
+4 --> 5 
+5 --> 6 8 
+6 --> 7 
+7 --> 8 
+8 --> 10 
+9 --> 10 
+10 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.21>
+ST_1 : Operation 11 [1/1] (1.21ns)   --->   "%childindexpipe_0_read = read i64 @_ssdm_op_Read.ap_fifo.volatile.i64P0A, i64 %childindexpipe_0" [/media/myuan/working/Vitis_HLS/2021.2/common/technology/autopilot/hls_stream_39.h:144]   --->   Operation 11 'read' 'childindexpipe_0_read' <Predicate = true> <Delay = 1.21> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.40> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 64> <Depth = 1> <FIFO>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%pipeobj_depth = trunc i64 %childindexpipe_0_read" [/media/myuan/working/Vitis_HLS/2021.2/common/technology/autopilot/hls_stream_39.h:144]   --->   Operation 12 'trunc' 'pipeobj_depth' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%pipeobj_ind = partselect i32 @_ssdm_op_PartSelect.i32.i64.i32.i32, i64 %childindexpipe_0_read, i32 32, i32 63" [/media/myuan/working/Vitis_HLS/2021.2/common/technology/autopilot/hls_stream_39.h:144]   --->   Operation 13 'partselect' 'pipeobj_ind' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (1.21ns)   --->   "%ret_signal_V = read i1 @_ssdm_op_Read.ap_fifo.volatile.i1P0A, i1 %lev_retpipe_0" [/media/myuan/working/Vitis_HLS/2021.2/common/technology/autopilot/hls_stream_39.h:144]   --->   Operation 14 'read' 'ret_signal_V' <Predicate = true> <Delay = 1.21> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 1> <Depth = 1> <FIFO>
+ST_1 : Operation 15 [1/1] (1.21ns)   --->   "%IDRpipes_0_read = read i64 @_ssdm_op_Read.ap_fifo.volatile.i64P0A, i64 %IDRpipes_0" [/media/myuan/working/Vitis_HLS/2021.2/common/technology/autopilot/hls_stream_39.h:144]   --->   Operation 15 'read' 'IDRpipes_0_read' <Predicate = true> <Delay = 1.21> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.40> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 64> <Depth = 1> <FIFO>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%IDR_wind = trunc i64 %IDRpipes_0_read" [/media/myuan/working/Vitis_HLS/2021.2/common/technology/autopilot/hls_stream_39.h:144]   --->   Operation 16 'trunc' 'IDR_wind' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%tmp_new_rewd_V = partselect i20 @_ssdm_op_PartSelect.i20.i64.i32.i32, i64 %IDRpipes_0_read, i32 32, i32 51" [/media/myuan/working/Vitis_HLS/2021.2/common/technology/autopilot/hls_stream_39.h:144]   --->   Operation 17 'partselect' 'tmp_new_rewd_V' <Predicate = true> <Delay = 0.00>
+
+State 2 <SV = 1> <Delay = 1.64>
+ST_2 : Operation 18 [1/1] (0.00ns)   --->   "%zext_ln379 = zext i32 %pipeobj_ind" [/home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/ucteq.cpp:379]   --->   Operation 18 'zext' 'zext_ln379' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 19 [1/1] (0.00ns)   --->   "%lev5_numc_V_addr = getelementptr i1 %lev5_numc_V, i64 0, i64 %zext_ln379" [/home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/ucteq.cpp:379]   --->   Operation 19 'getelementptr' 'lev5_numc_V_addr' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 20 [2/2] (1.64ns)   --->   "%parnode_numc_V = load i7 %lev5_numc_V_addr" [/home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/ucteq.cpp:435]   --->   Operation 20 'load' 'parnode_numc_V' <Predicate = true> <Delay = 1.64> <CoreInst = "RAM_1P_URAM">   --->   Core 91 'RAM_1P_URAM' <Latency = 1> <II = 1> <Delay = 1.64> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 1> <Depth = 81> <RAM>
+
+State 3 <SV = 2> <Delay = 1.64>
+ST_3 : Operation 21 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i20 %lev5_ucta_V, i64 666, i64 20, i64 18446744073709551615"   --->   Operation 21 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 22 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i1 %lev5_numc_V, i64 666, i64 20, i64 18446744073709551615"   --->   Operation 22 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 23 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %IDRpipes_0, i64 666, i64 10, i64 18446744073709551615"   --->   Operation 23 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 24 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %IDRpipes_1, i64 666, i64 10, i64 18446744073709551615"   --->   Operation 24 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 25 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %childindexpipe_0, i64 666, i64 10, i64 18446744073709551615"   --->   Operation 25 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 26 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %childindexpipe_1, i64 666, i64 10, i64 18446744073709551615"   --->   Operation 26 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 27 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i1 %lev_retpipe_0, i64 666, i64 10, i64 18446744073709551615"   --->   Operation 27 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 28 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i1 %lev_retpipe_1, i64 666, i64 10, i64 18446744073709551615"   --->   Operation 28 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 29 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %IDRpipes_1, void @empty_2, i32 0, i32 0, void @empty, i32 0, i32 0, void @empty, void @empty, void @empty, i32 0, i32 0, i32 0, i32 0, void @empty, void @empty"   --->   Operation 29 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 30 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %IDRpipes_0, void @empty_2, i32 0, i32 0, void @empty, i32 0, i32 0, void @empty, void @empty, void @empty, i32 0, i32 0, i32 0, i32 0, void @empty, void @empty"   --->   Operation 30 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 31 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %childindexpipe_1, void @empty_2, i32 0, i32 0, void @empty, i32 0, i32 0, void @empty, void @empty, void @empty, i32 0, i32 0, i32 0, i32 0, void @empty, void @empty"   --->   Operation 31 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 32 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %childindexpipe_0, void @empty_2, i32 0, i32 0, void @empty, i32 0, i32 0, void @empty, void @empty, void @empty, i32 0, i32 0, i32 0, i32 0, void @empty, void @empty"   --->   Operation 32 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 33 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i1 %lev_retpipe_1, void @empty_2, i32 0, i32 0, void @empty, i32 0, i32 0, void @empty, void @empty, void @empty, i32 0, i32 0, i32 0, i32 0, void @empty, void @empty"   --->   Operation 33 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 34 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i1 %lev_retpipe_0, void @empty_2, i32 0, i32 0, void @empty, i32 0, i32 0, void @empty, void @empty, void @empty, i32 0, i32 0, i32 0, i32 0, void @empty, void @empty"   --->   Operation 34 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 35 [1/2] (1.64ns)   --->   "%parnode_numc_V = load i7 %lev5_numc_V_addr" [/home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/ucteq.cpp:435]   --->   Operation 35 'load' 'parnode_numc_V' <Predicate = true> <Delay = 1.64> <CoreInst = "RAM_1P_URAM">   --->   Core 91 'RAM_1P_URAM' <Latency = 1> <II = 1> <Delay = 1.64> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 1> <Depth = 81> <RAM>
+ST_3 : Operation 36 [1/1] (0.00ns)   --->   "%br_ln388 = br i1 %ret_signal_V, void, void" [/home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/ucteq.cpp:388]   --->   Operation 36 'br' 'br_ln388' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 37 [1/1] (0.00ns)   --->   "%zext_ln390 = zext i5 %IDR_wind" [/home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/ucteq.cpp:390]   --->   Operation 37 'zext' 'zext_ln390' <Predicate = (!ret_signal_V)> <Delay = 0.00>
+ST_3 : Operation 38 [1/1] (0.00ns)   --->   "%memoiz_array_par_ind_addr = getelementptr i32 %memoiz_array_par_ind, i64 0, i64 %zext_ln390" [/home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/ucteq.cpp:390]   --->   Operation 38 'getelementptr' 'memoiz_array_par_ind_addr' <Predicate = (!ret_signal_V)> <Delay = 0.00>
+ST_3 : Operation 39 [2/2] (0.69ns)   --->   "%mobj_par_ind = load i5 %memoiz_array_par_ind_addr" [/home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/ucteq.cpp:390]   --->   Operation 39 'load' 'mobj_par_ind' <Predicate = (!ret_signal_V)> <Delay = 0.69> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.69> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 32> <RAM>
+ST_3 : Operation 40 [1/1] (0.00ns)   --->   "%memoiz_array_child_ind_addr = getelementptr i1 %memoiz_array_child_ind, i64 0, i64 %zext_ln390" [/home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/ucteq.cpp:390]   --->   Operation 40 'getelementptr' 'memoiz_array_child_ind_addr' <Predicate = (!ret_signal_V)> <Delay = 0.00>
+ST_3 : Operation 41 [2/2] (0.63ns)   --->   "%mobj_child_ind = load i5 %memoiz_array_child_ind_addr" [/home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/ucteq.cpp:390]   --->   Operation 41 'load' 'mobj_child_ind' <Predicate = (!ret_signal_V)> <Delay = 0.63> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.63> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 1> <Depth = 32> <RAM>
+
+State 4 <SV = 3> <Delay = 2.34>
+ST_4 : Operation 42 [1/2] (0.69ns)   --->   "%mobj_par_ind = load i5 %memoiz_array_par_ind_addr" [/home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/ucteq.cpp:390]   --->   Operation 42 'load' 'mobj_par_ind' <Predicate = true> <Delay = 0.69> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.69> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 32> <RAM>
+ST_4 : Operation 43 [1/2] (0.63ns)   --->   "%mobj_child_ind = load i5 %memoiz_array_child_ind_addr" [/home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/ucteq.cpp:390]   --->   Operation 43 'load' 'mobj_child_ind' <Predicate = true> <Delay = 0.63> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.63> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 1> <Depth = 32> <RAM>
+ST_4 : Operation 44 [1/1] (0.00ns)   --->   "%zext_ln395 = zext i32 %mobj_par_ind" [/home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/ucteq.cpp:395]   --->   Operation 44 'zext' 'zext_ln395' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 45 [1/1] (0.00ns)   --->   "%trunc_ln712 = trunc i32 %mobj_par_ind"   --->   Operation 45 'trunc' 'trunc_ln712' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 46 [1/1] (0.00ns)   --->   "%trunc_ln712_3 = trunc i32 %mobj_par_ind"   --->   Operation 46 'trunc' 'trunc_ln712_3' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 47 [1/1] (0.00ns)   --->   "%tmp_13_cast = bitconcatenate i8 @_ssdm_op_BitConcatenate.i8.i6.i2, i6 %trunc_ln712_3, i2 0"   --->   Operation 47 'bitconcatenate' 'tmp_13_cast' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 48 [1/1] (0.70ns)   --->   "%sub_ln712 = sub i8 %tmp_13_cast, i8 %trunc_ln712"   --->   Operation 48 'sub' 'sub_ln712' <Predicate = true> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 49 [1/1] (0.00ns)   --->   "%lev5_numc_V_addr_1 = getelementptr i1 %lev5_numc_V, i64 0, i64 %zext_ln395"   --->   Operation 49 'getelementptr' 'lev5_numc_V_addr_1' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 50 [2/2] (1.64ns)   --->   "%lev5_numc_V_load = load i7 %lev5_numc_V_addr_1"   --->   Operation 50 'load' 'lev5_numc_V_load' <Predicate = true> <Delay = 1.64> <CoreInst = "RAM_1P_URAM">   --->   Core 91 'RAM_1P_URAM' <Latency = 1> <II = 1> <Delay = 1.64> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 1> <Depth = 81> <RAM>
+ST_4 : Operation 51 [1/1] (0.85ns)   --->   "%icmp_ln395 = icmp_slt  i32 %mobj_par_ind, i32 3" [/home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/ucteq.cpp:395]   --->   Operation 51 'icmp' 'icmp_ln395' <Predicate = true> <Delay = 0.85> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.85> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+
+State 5 <SV = 4> <Delay = 2.35>
+ST_5 : Operation 52 [1/2] (1.64ns)   --->   "%lev5_numc_V_load = load i7 %lev5_numc_V_addr_1"   --->   Operation 52 'load' 'lev5_numc_V_load' <Predicate = true> <Delay = 1.64> <CoreInst = "RAM_1P_URAM">   --->   Core 91 'RAM_1P_URAM' <Latency = 1> <II = 1> <Delay = 1.64> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 1> <Depth = 81> <RAM>
+ST_5 : Operation 53 [1/1] (0.12ns)   --->   "%and_ln395 = and i1 %lev5_numc_V_load, i1 %icmp_ln395" [/home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/ucteq.cpp:395]   --->   Operation 53 'and' 'and_ln395' <Predicate = true> <Delay = 0.12> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.12> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 54 [1/1] (0.00ns)   --->   "%br_ln395 = br i1 %and_ln395, void %._crit_edge, void %_ZN13ap_fixed_baseILi21ELi13ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2ILi20ELi12ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.i.i" [/home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/ucteq.cpp:395]   --->   Operation 54 'br' 'br_ln395' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 55 [1/1] (0.00ns)   --->   "%zext_ln712 = zext i1 %mobj_child_ind"   --->   Operation 55 'zext' 'zext_ln712' <Predicate = (and_ln395)> <Delay = 0.00>
+ST_5 : Operation 56 [1/1] (0.70ns)   --->   "%add_ln712_3 = add i8 %sub_ln712, i8 %zext_ln712"   --->   Operation 56 'add' 'add_ln712_3' <Predicate = (and_ln395)> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 57 [1/1] (0.00ns)   --->   "%zext_ln712_3 = zext i8 %add_ln712_3"   --->   Operation 57 'zext' 'zext_ln712_3' <Predicate = (and_ln395)> <Delay = 0.00>
+ST_5 : Operation 58 [1/1] (0.00ns)   --->   "%lev5_ucta_V_addr = getelementptr i20 %lev5_ucta_V, i64 0, i64 %zext_ln712_3"   --->   Operation 58 'getelementptr' 'lev5_ucta_V_addr' <Predicate = (and_ln395)> <Delay = 0.00>
+ST_5 : Operation 59 [2/2] (1.64ns)   --->   "%lev5_ucta_V_load = load i8 %lev5_ucta_V_addr"   --->   Operation 59 'load' 'lev5_ucta_V_load' <Predicate = (and_ln395)> <Delay = 1.64> <CoreInst = "RAM_1P_URAM">   --->   Core 91 'RAM_1P_URAM' <Latency = 1> <II = 1> <Delay = 1.64> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 20> <Depth = 243> <RAM>
+
+State 6 <SV = 5> <Delay = 1.64>
+ST_6 : Operation 60 [1/2] (1.64ns)   --->   "%lev5_ucta_V_load = load i8 %lev5_ucta_V_addr"   --->   Operation 60 'load' 'lev5_ucta_V_load' <Predicate = true> <Delay = 1.64> <CoreInst = "RAM_1P_URAM">   --->   Core 91 'RAM_1P_URAM' <Latency = 1> <II = 1> <Delay = 1.64> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 20> <Depth = 243> <RAM>
+
+State 7 <SV = 6> <Delay = 0.80>
+ST_7 : Operation 61 [1/1] (0.80ns)   --->   "%add_ln712 = add i20 %lev5_ucta_V_load, i20 %tmp_new_rewd_V"   --->   Operation 61 'add' 'add_ln712' <Predicate = true> <Delay = 0.80> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+
+State 8 <SV = 7> <Delay = 1.64>
+ST_8 : Operation 62 [1/1] (1.64ns)   --->   "%store_ln712 = store i20 %add_ln712, i8 %lev5_ucta_V_addr"   --->   Operation 62 'store' 'store_ln712' <Predicate = (and_ln395)> <Delay = 1.64> <CoreInst = "RAM_1P_URAM">   --->   Core 91 'RAM_1P_URAM' <Latency = 1> <II = 1> <Delay = 1.64> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 20> <Depth = 243> <RAM>
+ST_8 : Operation 63 [1/1] (0.00ns)   --->   "%br_ln397 = br void %._crit_edge" [/home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/ucteq.cpp:397]   --->   Operation 63 'br' 'br_ln397' <Predicate = (and_ln395)> <Delay = 0.00>
+ST_8 : Operation 64 [1/1] (0.00ns)   --->   "%tmp_1 = partselect i30 @_ssdm_op_PartSelect.i30.i64.i32.i32, i64 %childindexpipe_0_read, i32 32, i32 61" [/home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/ucteq.cpp:413]   --->   Operation 64 'partselect' 'tmp_1' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 65 [1/1] (0.00ns)   --->   "%and_ln5 = bitconcatenate i32 @_ssdm_op_BitConcatenate.i32.i30.i2, i30 %tmp_1, i2 0" [/home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/ucteq.cpp:413]   --->   Operation 65 'bitconcatenate' 'and_ln5' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 66 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%sub_ln413 = sub i32 %and_ln5, i32 %pipeobj_ind" [/home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/ucteq.cpp:413]   --->   Operation 66 'sub' 'sub_ln413' <Predicate = true> <Delay = 0.00> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.36> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_8 : Operation 67 [1/1] (0.27ns)   --->   "%select_ln413 = select i1 %parnode_numc_V, i32 2, i32 1" [/home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/ucteq.cpp:413]   --->   Operation 67 'select' 'select_ln413' <Predicate = true> <Delay = 0.27> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.27> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_8 : Operation 68 [1/1] (0.73ns) (root node of TernaryAdder)   --->   "%newind_13 = add i32 %sub_ln413, i32 %select_ln413" [/home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/ucteq.cpp:413]   --->   Operation 68 'add' 'newind_13' <Predicate = true> <Delay = 0.73> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.36> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_8 : Operation 69 [1/1] (0.69ns)   --->   "%store_ln430 = store i32 %pipeobj_ind, i5 %memoiz_array_par_ind_addr" [/home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/ucteq.cpp:430]   --->   Operation 69 'store' 'store_ln430' <Predicate = true> <Delay = 0.69> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.69> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 32> <RAM>
+ST_8 : Operation 70 [1/1] (0.63ns)   --->   "%store_ln430 = store i1 0, i5 %memoiz_array_child_ind_addr" [/home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/ucteq.cpp:430]   --->   Operation 70 'store' 'store_ln430' <Predicate = true> <Delay = 0.63> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.63> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 1> <Depth = 32> <RAM>
+ST_8 : Operation 71 [1/1] (0.38ns)   --->   "%br_ln432 = br void" [/home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/ucteq.cpp:432]   --->   Operation 71 'br' 'br_ln432' <Predicate = true> <Delay = 0.38>
+
+State 9 <SV = 7> <Delay = 0.73>
+ST_9 : Operation 72 [1/1] (0.00ns)   --->   "%tmp_s = partselect i30 @_ssdm_op_PartSelect.i30.i64.i32.i32, i64 %childindexpipe_0_read, i32 32, i32 61" [/home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/ucteq.cpp:435]   --->   Operation 72 'partselect' 'tmp_s' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 73 [1/1] (0.00ns)   --->   "%and_ln = bitconcatenate i32 @_ssdm_op_BitConcatenate.i32.i30.i2, i30 %tmp_s, i2 0" [/home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/ucteq.cpp:435]   --->   Operation 73 'bitconcatenate' 'and_ln' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 74 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%sub_ln435 = sub i32 %and_ln, i32 %pipeobj_ind" [/home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/ucteq.cpp:435]   --->   Operation 74 'sub' 'sub_ln435' <Predicate = true> <Delay = 0.00> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.36> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_9 : Operation 75 [1/1] (0.00ns)   --->   "%zext_ln435 = zext i1 %parnode_numc_V" [/home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/ucteq.cpp:435]   --->   Operation 75 'zext' 'zext_ln435' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 76 [1/1] (0.73ns) (root node of TernaryAdder)   --->   "%newind = add i32 %sub_ln435, i32 %zext_ln435" [/home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/ucteq.cpp:435]   --->   Operation 76 'add' 'newind' <Predicate = true> <Delay = 0.73> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.36> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_9 : Operation 77 [1/1] (0.38ns)   --->   "%br_ln0 = br void"   --->   Operation 77 'br' 'br_ln0' <Predicate = true> <Delay = 0.38>
+
+State 10 <SV = 8> <Delay = 1.21>
+ST_10 : Operation 78 [1/1] (0.00ns)   --->   "%newind_15 = phi i32 %newind_13, void %._crit_edge, i32 %newind, void"   --->   Operation 78 'phi' 'newind_15' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 79 [1/1] (0.00ns)   --->   "%p_s = bitconcatenate i64 @_ssdm_op_BitConcatenate.i64.i32.i32, i32 %newind_15, i32 %pipeobj_depth" [/media/myuan/working/Vitis_HLS/2021.2/common/technology/autopilot/hls_stream_39.h:173]   --->   Operation 79 'bitconcatenate' 'p_s' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 80 [1/1] (1.21ns)   --->   "%write_ln173 = write void @_ssdm_op_Write.ap_fifo.volatile.i64P0A, i64 %childindexpipe_1, i64 %p_s" [/media/myuan/working/Vitis_HLS/2021.2/common/technology/autopilot/hls_stream_39.h:173]   --->   Operation 80 'write' 'write_ln173' <Predicate = true> <Delay = 1.21> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.40> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 64> <Depth = 1> <FIFO>
+ST_10 : Operation 81 [1/1] (1.21ns)   --->   "%write_ln173 = write void @_ssdm_op_Write.ap_fifo.volatile.i1P0A, i1 %lev_retpipe_1, i1 1" [/media/myuan/working/Vitis_HLS/2021.2/common/technology/autopilot/hls_stream_39.h:173]   --->   Operation 81 'write' 'write_ln173' <Predicate = true> <Delay = 1.21> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 1> <Depth = 1> <FIFO>
+ST_10 : Operation 82 [1/1] (1.21ns)   --->   "%write_ln173 = write void @_ssdm_op_Write.ap_fifo.volatile.i64P0A, i64 %IDRpipes_1, i64 %IDRpipes_0_read" [/media/myuan/working/Vitis_HLS/2021.2/common/technology/autopilot/hls_stream_39.h:173]   --->   Operation 82 'write' 'write_ln173' <Predicate = true> <Delay = 1.21> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.40> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 64> <Depth = 1> <FIFO>
+ST_10 : Operation 83 [1/1] (0.00ns)   --->   "%ret_ln444 = ret" [/home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/ucteq.cpp:444]   --->   Operation 83 'ret' 'ret_ln444' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 3.33ns, clock uncertainty: 0.9ns.
+
+ <State 1>: 1.22ns
+The critical path consists of the following:
+	fifo read operation ('childindexpipe_0_read', /media/myuan/working/Vitis_HLS/2021.2/common/technology/autopilot/hls_stream_39.h:144) on port 'childindexpipe_0' (/media/myuan/working/Vitis_HLS/2021.2/common/technology/autopilot/hls_stream_39.h:144) [25]  (1.22 ns)
+
+ <State 2>: 1.65ns
+The critical path consists of the following:
+	'getelementptr' operation ('lev5_numc_V_addr', /home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/ucteq.cpp:379) [29]  (0 ns)
+	'load' operation ('parnode.numc.V', /home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/ucteq.cpp:435) on array 'lev5_numc_V' [30]  (1.65 ns)
+
+ <State 3>: 1.65ns
+The critical path consists of the following:
+	'load' operation ('parnode.numc.V', /home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/ucteq.cpp:435) on array 'lev5_numc_V' [30]  (1.65 ns)
+
+ <State 4>: 2.34ns
+The critical path consists of the following:
+	'load' operation ('mobj.par_ind', /home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/ucteq.cpp:390) on array 'memoiz_array_par_ind' [39]  (0.699 ns)
+	'getelementptr' operation ('lev5_numc_V_addr_1') [47]  (0 ns)
+	'load' operation ('lev5_numc_V_load') on array 'lev5_numc_V' [48]  (1.65 ns)
+
+ <State 5>: 2.35ns
+The critical path consists of the following:
+	'add' operation ('add_ln712_3') [54]  (0.705 ns)
+	'getelementptr' operation ('lev5_ucta_V_addr') [56]  (0 ns)
+	'load' operation ('lev5_ucta_V_load') on array 'lev5_ucta_V' [57]  (1.65 ns)
+
+ <State 6>: 1.65ns
+The critical path consists of the following:
+	'load' operation ('lev5_ucta_V_load') on array 'lev5_ucta_V' [57]  (1.65 ns)
+
+ <State 7>: 0.809ns
+The critical path consists of the following:
+	'add' operation ('add_ln712') [58]  (0.809 ns)
+
+ <State 8>: 1.65ns
+The critical path consists of the following:
+	'store' operation ('store_ln712') of variable 'add_ln712' on array 'lev5_ucta_V' [59]  (1.65 ns)
+
+ <State 9>: 0.731ns
+The critical path consists of the following:
+	'sub' operation ('sub_ln435', /home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/ucteq.cpp:435) [73]  (0 ns)
+	'add' operation ('newind', /home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/ucteq.cpp:435) [75]  (0.731 ns)
+
+ <State 10>: 1.22ns
+The critical path consists of the following:
+	'phi' operation ('newind') with incoming values : ('newind', /home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/ucteq.cpp:413) ('newind', /home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/ucteq.cpp:435) [78]  (0 ns)
+	fifo write operation ('write_ln173', /media/myuan/working/Vitis_HLS/2021.2/common/technology/autopilot/hls_stream_39.h:173) on port 'childindexpipe_1' (/media/myuan/working/Vitis_HLS/2021.2/common/technology/autopilot/hls_stream_39.h:173) [80]  (1.22 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

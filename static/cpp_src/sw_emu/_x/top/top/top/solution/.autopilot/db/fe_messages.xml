@@ -1,0 +1,282 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5554" msg_severity="WARNING" msg_loc="/home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/ucteq.cpp:97:9" msg_body="Only for-loops and functions support the dataflow">
+        <args ClangWarningOption="ignored-hls-dataflow-attribute"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5554" msg_severity="WARNING" msg_loc="/home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/ucteq.cpp:308:9" msg_body="Only for-loops and functions support the dataflow">
+        <args ClangWarningOption="ignored-hls-dataflow-attribute"/>
+    </msg>
+    <msg msg_groups="" msg_id="207-5287" msg_severity="WARNING" msg_loc="/home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/ucteq.cpp:250:7" msg_body="unused parameter 'flushs'">
+        <args ClangWarningOption="unused-parameter"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/media/myuan/working/Vitis_HLS/2021.2/common/technology/autopilot/ap_int_ref.h:718:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="and_reduce" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/media/myuan/working/Vitis_HLS/2021.2/common/technology/autopilot/ap_int_ref.h:732:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="or_reduce" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/media/myuan/working/Vitis_HLS/2021.2/common/technology/autopilot/ap_int_ref.h:746:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="xor_reduce" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/media/myuan/working/Vitis_HLS/2021.2/common/technology/autopilot/ap_axi_sdata.h:122:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="get_user_ptr" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/media/myuan/working/Vitis_HLS/2021.2/common/technology/autopilot/ap_axi_sdata.h:126:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="get_id_ptr" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/media/myuan/working/Vitis_HLS/2021.2/common/technology/autopilot/ap_axi_sdata.h:130:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="get_dest_ptr" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/media/myuan/working/Vitis_HLS/2021.2/common/technology/autopilot/ap_axi_sdata.h:160:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="get_strb_ptr" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/media/myuan/working/Vitis_HLS/2021.2/common/technology/autopilot/ap_axi_sdata.h:164:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="get_user_ptr" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/media/myuan/working/Vitis_HLS/2021.2/common/technology/autopilot/ap_axi_sdata.h:168:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="get_id_ptr" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/media/myuan/working/Vitis_HLS/2021.2/common/technology/autopilot/ap_axi_sdata.h:172:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="get_dest_ptr" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/media/myuan/working/Vitis_HLS/2021.2/common/technology/autopilot/ap_axi_sdata.h:178:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="get_data" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/media/myuan/working/Vitis_HLS/2021.2/common/technology/autopilot/ap_axi_sdata.h:182:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="get_keep" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/media/myuan/working/Vitis_HLS/2021.2/common/technology/autopilot/ap_axi_sdata.h:186:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="get_last" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/media/myuan/working/Vitis_HLS/2021.2/common/technology/autopilot/ap_axi_sdata.h:191:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="set_data" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/media/myuan/working/Vitis_HLS/2021.2/common/technology/autopilot/ap_axi_sdata.h:195:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="set_keep" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/media/myuan/working/Vitis_HLS/2021.2/common/technology/autopilot/ap_axi_sdata.h:199:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="set_last" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/media/myuan/working/Vitis_HLS/2021.2/common/technology/autopilot/ap_axi_sdata.h:203:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="keep_all" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/media/myuan/working/Vitis_HLS/2021.2/common/technology/autopilot/ap_axi_sdata.h:209:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="qdma_axis&lt;WData, 0, 0, 0&gt;" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/media/myuan/working/Vitis_HLS/2021.2/common/technology/autopilot/ap_axi_sdata.h:213:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="qdma_axis&lt;WData, 0, 0, 0&gt;" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/media/myuan/working/Vitis_HLS/2021.2/common/technology/autopilot/ap_axi_sdata.h:217:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="qdma_axis&lt;WData, 0, 0, 0&gt;" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/media/myuan/working/Vitis_HLS/2021.2/common/technology/autopilot/ap_axi_sdata.h:222:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="qdma_axis&lt;WData, 0, 0, 0&gt;" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/media/myuan/working/Vitis_HLS/2021.2/common/technology/autopilot/ap_axi_sdata.h:227:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="qdma_axis&lt;WData, 0, 0, 0&gt;" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/media/myuan/working/Vitis_HLS/2021.2/common/technology/autopilot/ap_axi_sdata.h:231:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="operator=" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/media/myuan/working/Vitis_HLS/2021.2/common/technology/autopilot/ap_axi_sdata.h:266:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="empty" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/media/myuan/working/Vitis_HLS/2021.2/common/technology/autopilot/ap_axi_sdata.h:273:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="full" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/media/myuan/working/Vitis_HLS/2021.2/common/technology/autopilot/ap_axi_sdata.h:281:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="read" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/media/myuan/working/Vitis_HLS/2021.2/common/technology/autopilot/ap_axi_sdata.h:291:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="read" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/media/myuan/working/Vitis_HLS/2021.2/common/technology/autopilot/ap_axi_sdata.h:302:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="write" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/media/myuan/working/Vitis_HLS/2021.2/common/technology/autopilot/ap_axi_sdata.h:312:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="read_nb" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/media/myuan/working/Vitis_HLS/2021.2/common/technology/autopilot/ap_axi_sdata.h:327:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="write_nb" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/media/myuan/working/Vitis_HLS/2021.2/common/technology/autopilot/ap_axi_sdata.h:363:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="empty" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/media/myuan/working/Vitis_HLS/2021.2/common/technology/autopilot/ap_axi_sdata.h:370:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="full" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/media/myuan/working/Vitis_HLS/2021.2/common/technology/autopilot/ap_axi_sdata.h:378:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="read" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/media/myuan/working/Vitis_HLS/2021.2/common/technology/autopilot/ap_axi_sdata.h:388:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="read" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/media/myuan/working/Vitis_HLS/2021.2/common/technology/autopilot/ap_axi_sdata.h:399:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="write" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/media/myuan/working/Vitis_HLS/2021.2/common/technology/autopilot/ap_axi_sdata.h:409:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="read_nb" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/media/myuan/working/Vitis_HLS/2021.2/common/technology/autopilot/ap_axi_sdata.h:425:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="write_nb" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/ucteq.cpp:30:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="top" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=top" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/ucteq.cpp:30:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="top" ARG_PragmaIsValid="1" ARG_PragmaOptions="axis port=X" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/ucteq.cpp:31:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="top" ARG_PragmaIsValid="1" ARG_PragmaOptions="axis port=ids" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/ucteq.cpp:33:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="top" ARG_PragmaIsValid="1" ARG_PragmaOptions="axis port=out" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/ucteq.cpp:35:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="top" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port=adj_list bundle=gmem0 offset=slave" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/ucteq.cpp:37:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="top" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=adj_list bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/ucteq.cpp:38:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="top" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=flushs bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/ucteq.cpp:39:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="top" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=return bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/ucteq.cpp:44:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="top" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=xbarpipe depth=1" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/ucteq.cpp:45:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="top" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=xbarpipe type=fifo impl=SRL" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/ucteq.cpp:48:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="top" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=xbarIDRpipe depth=1" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/ucteq.cpp:49:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="top" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=xbarIDRpipe type=fifo impl=SRL" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/ucteq.cpp:54:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="top" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=IDRpipe1 depth=32" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/ucteq.cpp:55:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="top" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=IDRpipe1 type=fifo impl=SRL" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/ucteq.cpp:57:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="top" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=IDRpipe2 depth=32" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/ucteq.cpp:58:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="top" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=IDRpipe2 type=fifo impl=SRL" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/ucteq.cpp:60:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="top" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=IDRpipe3 depth=32" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/ucteq.cpp:61:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="top" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=IDRpipe3 type=fifo impl=SRL" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/ucteq.cpp:64:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="top" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=Wsigpipe1 depth=1" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/ucteq.cpp:65:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="top" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=Wsigpipe1 type=fifo impl=SRL" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/ucteq.cpp:67:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="top" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=Wsigpipe2 depth=1" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/ucteq.cpp:68:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="top" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=Wsigpipe2 type=fifo impl=SRL" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/ucteq.cpp:70:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="top" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=Wsigpipe3 depth=1" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/ucteq.cpp:71:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="top" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=Wsigpipe3 type=fifo impl=SRL" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/ucteq.cpp:74:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="top" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=OutTuppipe1 depth=32" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/ucteq.cpp:75:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="top" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=OutTuppipe1 type=fifo impl=SRL" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/ucteq.cpp:77:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="top" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=OutTuppipe2 depth=32" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/ucteq.cpp:78:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="top" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=OutTuppipe2 type=fifo impl=SRL" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/ucteq.cpp:80:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="top" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=OutTuppipe3 depth=32" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/ucteq.cpp:81:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="top" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=OutTuppipe3 type=fifo impl=SRL" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/ucteq.cpp:97:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="top" ARG_PragmaIsValid="1" ARG_PragmaType="dataflow" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/ucteq.cpp:108:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="top" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/ucteq.cpp:254:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="subT1_pipl" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=lev_retpipe depth=1" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/ucteq.cpp:255:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="subT1_pipl" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=lev_retpipe type=fifo impl=SRL" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/ucteq.cpp:258:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="subT1_pipl" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=childindexpipe depth=1" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/ucteq.cpp:259:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="subT1_pipl" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=childindexpipe type=fifo impl=SRL" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/ucteq.cpp:271:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="subT1_pipl" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=IDRpipes depth=1" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/ucteq.cpp:272:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="subT1_pipl" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=IDRpipes type=fifo impl=SRL" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/ucteq.cpp:286:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="subT1_pipl" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=lev1 type=RAM_1P impl=bram" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/ucteq.cpp:287:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="subT1_pipl" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=lev2 type=RAM_1P impl=bram" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/ucteq.cpp:288:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="subT1_pipl" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=lev3 type=RAM_1P impl=uram" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/ucteq.cpp:289:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="subT1_pipl" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=lev4 type=RAM_1P impl=uram" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/ucteq.cpp:290:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="subT1_pipl" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=lev5 type=RAM_1P impl=uram" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/ucteq.cpp:293:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="subT1_pipl" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=memoizlevs dim=1 complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/ucteq.cpp:308:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="subT1_pipl" ARG_PragmaIsValid="1" ARG_PragmaType="dataflow" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/ucteq.cpp:418:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="subT1_lev_stage" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="/home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/ucteq.cpp:29:0" msg_body="Inlining function 'xbar(hls::stream&lt;ap_int&lt;3&gt;, 0&gt;&amp;, hls::stream&lt;BpSel_inputObj, 0&gt;&amp;, hls::stream&lt;BpSel_inputObj, 0&gt;&amp;, hls::stream&lt;BpSel_inputObj, 0&gt;&amp;, hls::stream&lt;BpSel_inputObj, 0&gt;&amp;, hls::stream&lt;ap_int&lt;1&gt;, 0&gt;&amp;, hls::stream&lt;ap_int&lt;1&gt;, 0&gt;&amp;, hls::stream&lt;ap_int&lt;1&gt;, 0&gt;&amp;)' into 'top'">
+        <args Callee="xbar(hls::stream&lt;ap_int&lt;3&gt;, 0&gt;&amp;, hls::stream&lt;BpSel_inputObj, 0&gt;&amp;, hls::stream&lt;BpSel_inputObj, 0&gt;&amp;, hls::stream&lt;BpSel_inputObj, 0&gt;&amp;, hls::stream&lt;BpSel_inputObj, 0&gt;&amp;, hls::stream&lt;ap_int&lt;1&gt;, 0&gt;&amp;, hls::stream&lt;ap_int&lt;1&gt;, 0&gt;&amp;, hls::stream&lt;ap_int&lt;1&gt;, 0&gt;&amp;)" Caller="top"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="/home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/ucteq.cpp:29:0" msg_body="Inlining function 'collect_out(hls::stream&lt;SelTupleOut, 0&gt;&amp;, hls::stream&lt;SelTupleOut, 0&gt;&amp;, hls::stream&lt;SelTupleOut, 0&gt;&amp;, SelTupleOut*)' into 'top'">
+        <args Callee="collect_out(hls::stream&lt;SelTupleOut, 0&gt;&amp;, hls::stream&lt;SelTupleOut, 0&gt;&amp;, hls::stream&lt;SelTupleOut, 0&gt;&amp;, SelTupleOut*)" Caller="top"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="/home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/ucteq.cpp:292:0" msg_body="Applying array_partition to '_ZZ10subT1_piplRN3hls6streamI14BpSel_inputObjLi0EEERNS0_I6ap_intILi1EELi0EEERNS0_I11SelTupleOutLi0EEEiE10memoizlevs': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZZ10subT1_piplRN3hls6streamI14BpSel_inputObjLi0EEERNS0_I6ap_intILi1EELi0EEERNS0_I11SelTupleOutLi0EEEiE10memoizlevs"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="/home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/ucteq.cpp:253:25" msg_body="Applying array_partition to 'lev_retpipe': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="lev_retpipe"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="/home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/ucteq.cpp:257:24" msg_body="Applying array_partition to 'childindexpipe': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="childindexpipe"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="/home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/ucteq.cpp:270:30" msg_body="Applying array_partition to 'IDRpipes': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="IDRpipes"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-142" msg_severity="WARNING" msg_loc="/home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/ucteq.cpp:29:0" msg_body="Implementing stream: may cause mismatch if read and write accesses are not in sequential order on port 'out_r'">
+        <args Name="out_r"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

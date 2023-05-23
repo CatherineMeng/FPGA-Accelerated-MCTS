@@ -1,0 +1,42 @@
+INFO: [v++ 60-1306] Additional information associated with this v++ link can be found at:
+	Reports: /home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/hw_emu/_x/reports/link
+	Log files: /home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/hw_emu/_x/logs/link
+INFO: [v++ 60-1548] Creating build summary session with primary output /home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/hw_emu/top.xclbin.link_summary, at Sun Jan 24 08:15:55 2021
+INFO: [v++ 60-1316] Initiating connection to rulecheck server, at Sun Jan 24 08:15:55 2021
+INFO: [v++ 60-1315] Creating rulecheck session with output '/home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/hw_emu/_x/reports/link/v++_link_top_guidance.html', at Sun Jan 24 08:15:56 2021
+INFO: [v++ 60-895]   Target platform: /opt/xilinx/platforms/xilinx_u200_gen3x16_xdma_1_202110_1/xilinx_u200_gen3x16_xdma_1_202110_1.xpfm
+INFO: [v++ 60-1578]   This platform contains Xilinx Shell Archive '/opt/xilinx/platforms/xilinx_u200_gen3x16_xdma_1_202110_1/hw/hw.xsa'
+INFO: [v++ 74-78] Compiler Version string: 2021.2
+INFO: [v++ 60-629] Linking for hardware emulation target
+INFO: [v++ 60-423]   Target device: xilinx_u200_gen3x16_xdma_1_202110_1
+INFO: [v++ 60-1332] Run 'run_link' status: Not started
+INFO: [v++ 60-1443] [08:16:04] Run run_link: Step system_link: Started
+INFO: [v++ 60-1453] Command Line: system_link --xo /home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/hw_emu/top.xo -keep --config /home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/hw_emu/_x/link/int/syslinkConfig.ini --xpfm /opt/xilinx/platforms/xilinx_u200_gen3x16_xdma_1_202110_1/xilinx_u200_gen3x16_xdma_1_202110_1.xpfm --target emu --output_dir /home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/hw_emu/_x/link/int --temp_dir /home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/hw_emu/_x/link/sys_link
+INFO: [v++ 60-1454] Run Directory: /home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/hw_emu/_x/link/run_link
+INFO: [SYSTEM_LINK 60-1316] Initiating connection to rulecheck server, at Sun Jan 24 08:16:06 2021
+INFO: [SYSTEM_LINK 82-70] Extracting xo v3 file /home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/hw_emu/top.xo
+INFO: [SYSTEM_LINK 82-53] Creating IP database /home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/hw_emu/_x/link/sys_link/_sysl/.cdb/xd_ip_db.xml
+INFO: [SYSTEM_LINK 82-38] [08:16:06] build_xd_ip_db started: /media/myuan/working/Vitis/2021.2/bin/build_xd_ip_db -ip_search 0  -sds-pf /home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/hw_emu/_x/link/sys_link/hw_emu.hpfm -clkid 0 -ip /home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/hw_emu/_x/link/sys_link/iprepo/xilinx_com_hls_top_1_0,top -o /home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/hw_emu/_x/link/sys_link/_sysl/.cdb/xd_ip_db.xml
+INFO: [SYSTEM_LINK 82-37] [08:16:12] build_xd_ip_db finished successfully
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 2182.195 ; gain = 0.000 ; free physical = 68231 ; free virtual = 77179
+INFO: [SYSTEM_LINK 82-51] Create system connectivity graph
+INFO: [SYSTEM_LINK 82-102] Applying explicit connections to the system connectivity graph: /home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/hw_emu/_x/link/sys_link/cfgraph/cfgen_cfgraph.xml
+INFO: [SYSTEM_LINK 82-38] [08:16:12] cfgen started: /media/myuan/working/Vitis/2021.2/bin/cfgen  -nk top:1:top_1 -sp top_1.out:DDR[0] -sp top_1.adj_list:DDR[0] -dmclkid 0 -r /home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/hw_emu/_x/link/sys_link/_sysl/.cdb/xd_ip_db.xml -o /home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/hw_emu/_x/link/sys_link/cfgraph/cfgen_cfgraph.xml
+INFO: [CFGEN 83-0] Kernel Specs: 
+INFO: [CFGEN 83-0]   kernel: top, num: 1  {top_1}
+INFO: [CFGEN 83-0] Port Specs: 
+INFO: [CFGEN 83-0]   kernel: top_1, k_port: out, sptag: DDR[0]
+INFO: [CFGEN 83-0]   kernel: top_1, k_port: adj_list, sptag: DDR[0]
+ERROR: [CFGEN 83-2292] --sp tag applied to port or argument name out which is of the incorrect interface type
+ERROR: [CFGEN 83-2298] Exiting due to previous error
+ERROR: [SYSTEM_LINK 82-36] [08:16:15] cfgen failed
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2182.195 ; gain = 0.000 ; free physical = 68230 ; free virtual = 77178
+ERROR: [SYSTEM_LINK 82-62] Error generating design file for /home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/hw_emu/_x/link/sys_link/cfgraph/cfgen_cfgraph.xml, command: /media/myuan/working/Vitis/2021.2/bin/cfgen  -nk top:1:top_1 -sp top_1.out:DDR[0] -sp top_1.adj_list:DDR[0] -dmclkid 0 -r /home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/hw_emu/_x/link/sys_link/_sysl/.cdb/xd_ip_db.xml -o /home/myuan/Desktop/MCTS/FPGA-Accelerated-MCTS/cpp_src/hw_emu/_x/link/sys_link/cfgraph/cfgen_cfgraph.xml
+ERROR: [SYSTEM_LINK 82-96] Error applying explicit connections to the system connectivity graph
+ERROR: [SYSTEM_LINK 82-79] Unable to create system connectivity graph
+INFO: [v++ 60-1442] [08:16:15] Run run_link: Step system_link: Failed
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:12 . Memory (MB): peak = 2073.926 ; gain = 0.000 ; free physical = 68270 ; free virtual = 77218
+ERROR: [v++ 60-661] v++ link run 'run_link' failed
+ERROR: [v++ 60-626] Kernel link failed to complete
+ERROR: [v++ 60-703] Failed to finish linking
+INFO: [v++ 60-1653] Closing dispatch client.

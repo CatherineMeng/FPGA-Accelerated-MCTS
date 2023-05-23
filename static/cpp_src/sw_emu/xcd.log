@@ -1,0 +1,40 @@
+Fri Jul  1 13:16:39 2022: Running xcd server. This server was built by gradle.
+Fri Jul  1 13:16:39 2022: Server was asked to start on port: '43013'
+Fri Jul  1 13:16:39 2022: Server is using token UUID: '9a096277-d696-408f-99d6-e89b06561c6c'
+Fri Jul  1 13:16:39 2022: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+Fri Jul  1 13:16:39 2022: Attempting to start server on port '43013'
+Fri Jul  1 13:16:39 2022: XCD main fifo: created main fifo '/tmp/xcdmain9a096277-d696-408f-99d6-e89b06561c6c', fd read = 13
+Fri Jul  1 13:16:39 2022: Running Dispatch Server
+Fri Jul  1 13:16:39 2022: Version 2.2.0
+Fri Jul  1 13:16:48 2022: Dispatch Server: Accepted socket connection from client
+Fri Jul  1 13:16:48 2022: Starting Socket connection
+Fri Jul  1 13:16:48 2022: EXCHANGE_TOKEN received, server token: 9a096277-d696-408f-99d6-e89b06561c6c, passed token: 9a096277-d696-408f-99d6-e89b06561c6c
+Fri Jul  1 13:16:49 2022: DISPATCH_HANDLER: Adding handler from function makeHandler in library libxv_system_diagram
+Fri Jul  1 13:16:49 2022: SESSION_MGR: creating session with session uuid: 'bb154d3c-6559-4db6-8d7e-eaf24d4f33d6' and name 'v++_compile_top'
+Fri Jul  1 13:16:49 2022: KERNEL_SVC: creating session with uuid: 'bb154d3c-6559-4db6-8d7e-eaf24d4f33d6' and name 'v++_compile_top'
+Fri Jul  1 13:16:49 2022: GUIDANCE_SMGR: creating guidance session with uuid: 'bb154d3c-6559-4db6-8d7e-eaf24d4f33d6' and name 'v++_compile_top'
+Fri Jul  1 13:16:49 2022: SYSTEM_DIAGRAM: creating session with uuid: 'bb154d3c-6559-4db6-8d7e-eaf24d4f33d6' and name 'v++_compile_top'
+Fri Jul  1 13:17:06 2022: SESSION_MGR: closing session for UUID 'bb154d3c-6559-4db6-8d7e-eaf24d4f33d6' with name 'v++_compile_top'
+Fri Jul  1 13:17:06 2022: KERNEL_SVC: closing session for UUID 'bb154d3c-6559-4db6-8d7e-eaf24d4f33d6' with name 'v++_compile_top'
+Fri Jul  1 13:17:06 2022: GUIDANCE_SMGR: closing session for UUID 'bb154d3c-6559-4db6-8d7e-eaf24d4f33d6' with name 'v++_compile_top'
+Fri Jul  1 13:17:06 2022: SYSTEM_DIAGRAM: closing session for UUID 'bb154d3c-6559-4db6-8d7e-eaf24d4f33d6' with name 'v++_compile_top'
+Fri Jul  1 13:17:23 2022: Running xcd server. This server was built by gradle.
+Fri Jul  1 13:17:23 2022: Server was asked to start on port: '33013'
+Fri Jul  1 13:17:23 2022: Server is using token UUID: '6fbf7f41-7b52-45f8-9a30-48ce825fcf6d'
+Fri Jul  1 13:17:23 2022: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+Fri Jul  1 13:17:23 2022: Attempting to start server on port '33013'
+Fri Jul  1 13:17:23 2022: XCD main fifo: created main fifo '/tmp/xcdmain6fbf7f41-7b52-45f8-9a30-48ce825fcf6d', fd read = 13
+Fri Jul  1 13:17:23 2022: Running Dispatch Server
+Fri Jul  1 13:17:23 2022: Version 2.2.0
+Fri Jul  1 13:17:32 2022: Dispatch Server: Accepted socket connection from client
+Fri Jul  1 13:17:32 2022: Starting Socket connection
+Fri Jul  1 13:17:32 2022: EXCHANGE_TOKEN received, server token: 6fbf7f41-7b52-45f8-9a30-48ce825fcf6d, passed token: 6fbf7f41-7b52-45f8-9a30-48ce825fcf6d
+Fri Jul  1 13:17:33 2022: DISPATCH_HANDLER: Adding handler from function makeHandler in library libxv_system_diagram
+Fri Jul  1 13:17:33 2022: SESSION_MGR: creating session with session uuid: 'fed2a2bd-aea3-496a-9d13-649d080e0392' and name 'v++_link_top'
+Fri Jul  1 13:17:33 2022: KERNEL_SVC: creating session with uuid: 'fed2a2bd-aea3-496a-9d13-649d080e0392' and name 'v++_link_top'
+Fri Jul  1 13:17:33 2022: GUIDANCE_SMGR: creating guidance session with uuid: 'fed2a2bd-aea3-496a-9d13-649d080e0392' and name 'v++_link_top'
+Fri Jul  1 13:17:33 2022: SYSTEM_DIAGRAM: creating session with uuid: 'fed2a2bd-aea3-496a-9d13-649d080e0392' and name 'v++_link_top'
+Fri Jul  1 13:17:47 2022: SESSION_MGR: closing session for UUID 'fed2a2bd-aea3-496a-9d13-649d080e0392' with name 'v++_link_top'
+Fri Jul  1 13:17:47 2022: KERNEL_SVC: closing session for UUID 'fed2a2bd-aea3-496a-9d13-649d080e0392' with name 'v++_link_top'
+Fri Jul  1 13:17:47 2022: GUIDANCE_SMGR: closing session for UUID 'fed2a2bd-aea3-496a-9d13-649d080e0392' with name 'v++_link_top'
+Fri Jul  1 13:17:47 2022: SYSTEM_DIAGRAM: closing session for UUID 'fed2a2bd-aea3-496a-9d13-649d080e0392' with name 'v++_link_top'
